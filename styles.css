@@ -1,0 +1,141 @@
+/* main */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #e5e5e5;
+}
+
+/* -------- HOME PAGE MOBILE -------- */
+
+/* navbar */
+
+.navbar-title {
+  color: #ff881b;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.navbar-title:hover {
+  text-decoration: none;
+  color: #ff881b;
+  opacity: 0.8;
+}
+
+/* banner */
+
+.header-img {
+  height: 40vh;
+  width: 100vw;
+}
+
+/* ticketing */
+
+form {
+  text-align: center;
+  background: #ffffff;
+}
+
+.form-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  font-weight: bold;
+}
+
+.form-label {
+  margin-top: 0.7rem;
+}
+
+.form-input {
+  width: 15%;
+  height: 2em;
+}
+
+.form-price {
+  margin-top: 1rem;
+}
+
+.form-submit {
+  width: 90%;
+  height: 3em;
+  background: #ff881b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* -------- HOME PAGE DESKTOP -------- */
+
+@media screen and (min-width: 768px) {
+  /* navbar */
+
+  .navbar-title {
+    margin-left: 2em;
+  }
+
+  .navbar-content {
+    margin-left: auto;
+    margin-right: 2em;
+  }
+
+  /* banner */
+
+  .header-img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  /* ticketing */
+
+  form {
+    width: 50vw;
+    margin: auto;
+  }
+
+  .form-container {
+    flex-direction: row;
+  }
+
+  .form-group-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-group {
+    width: 50%;
+  }
+
+  .form-input {
+    width: 20%;
+  }
+
+  .total {
+    margin-bottom: 2rem;
+  }
+}
