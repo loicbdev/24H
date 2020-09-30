@@ -71,6 +71,10 @@ form {
     width: 50%;
   }
 
+  .form-input {
+    width: 20%;
+  }
+
   .total {
     margin-bottom: 2rem;
   }
