@@ -1,3 +1,5 @@
+/* -------- MOBILE -------- */
+
 /* -------- HOME PAGE MOBILE -------- */
 
 /* navbar */
@@ -79,11 +81,18 @@ form {
   border-radius: 5px;
 }
 
-/* -------- HOME PAGE DESKTOP -------- */
+.news-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
 
-/* navbar */
+/* -------- DESKTOP -------- */
 
 @media screen and (min-width: 768px) {
+  /* -------- HOME PAGE DESKTOP -------- */
+
+  /* navbar */
+
   .navbar-title {
     margin-left: 2em;
   }
