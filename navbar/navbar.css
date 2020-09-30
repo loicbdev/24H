@@ -1,0 +1,22 @@
+.navbar-title {
+  color: #ff881b;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.navbar-title:hover {
+  text-decoration: none;
+  color: #ff881b;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-title {
+    margin-left: 2em;
+  }
+
+  .navbar-content {
+    margin-left: auto;
+    margin-right: 2em;
+  }
+}
