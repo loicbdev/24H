@@ -1,0 +1,70 @@
+footer{
+    align-items: center;
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 0px;
+    padding-right: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerLogo {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+.fa-twitter::before {
+    font-family: "Font Awesome 5 Brands"; content: "\f099";
+}
+.fa-instagram-square::before {
+    font-family: "Font Awesome 5 Brands"; content: "\e055";
+}
+
+@media screen and (min-width: 768px) {
+
+footer {
+    display: flex;
+    padding: 25px;
+    padding-left: 0px;
+    padding-right: 50px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+        
+li {
+    list-style: none;
+}
+
+.socialNetworks .footerLogo {
+    display: block;
+    width: 100%;
+}
+
+.footerMenu {
+    flex-direction: column;
+}
+
+.fa-twitter::before {
+    font-family: "Font Awesome 5 Brands"; content: "\f099";
+}
+
+.fa-instagram-square::before {
+    font-family: "Font Awesome 5 Brands"; content: "\e055";
+}
+
+.footerLogo {
+    display: block;
+}
+
+}
