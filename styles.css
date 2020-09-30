@@ -1,0 +1,44 @@
+/* -------- HOME PAGE MOBILE -------- */
+
+/* navbar */
+
+.navbar-title {
+  color: #ff881b;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.navbar-title:hover {
+  text-decoration: none;
+  color: #ff881b;
+  opacity: 0.8;
+}
+
+/* banner */
+
+.header-img {
+  height: 40vh;
+  width: 100vw;
+}
+
+/* -------- HOME PAGE DESKTOP -------- */
+
+/* navbar */
+
+@media screen and (min-width: 768px) {
+  .navbar-title {
+    margin-left: 2em;
+  }
+
+  .navbar-content {
+    margin-left: auto;
+    margin-right: 2em;
+  }
+
+  /* banner */
+
+  .header-img {
+    height: 100vh;
+    width: 100%;
+  }
+}
