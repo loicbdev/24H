@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding:0;
+    background: grey;
+    font-family: 'Roboto';    
+}
+
+.card {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 50% 10% 25% 15%;
+    grid-template-columns: 2fr 2fr;
+}
+
+.cardImg {
+    grid-area: 1 / 1 / 2 / 3;
+    background: url(image/toyotawim.jpeg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    filter: brightness(90%);
+}
+
+.cardTitle {
+    grid-area: 2 / 1 / 3 / 3;
+    font-size: 9px;
+    font-weight: 500;   
+}
+
+.title {
+    padding-left: 0.5em;
+    padding-top: 0.5em;   
+}
+
+.cardPar {
+    grid-area: 3 / 1 / 4 / 3;
+    padding-left: 0.5em;
+    padding-right: 0.5em;   
+}
+
+
+.par {
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.cardButton {
+    grid-area: 4 / 1 / 5 / 3;
+    position: absolute;
+    top: 30%;
+    right: 6%;
+}
+
+.infoButton {
+    width: 125px;
+    height: 35px;
+    border-color: #FF881B;
+    border-radius: 4px;
+    background-color: white;
+    color: #FF881B;
+    border-style: solid;
+}
+
+.infoButton:hover {
+    color: white;
+    background-color: #FF881B;
+
+}
+
+
+

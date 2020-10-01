@@ -1,0 +1,303 @@
+/* main */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+:root {
+  --main-bg-color: #5b78c7;
+  --content-bg-color: #ffffff;
+  --orange: #ff881b;
+  --section-margin: 2em;
+  --title-font-size: 2rem;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: var(--main-bg-color);
+  scroll-behavior: smooth;
+}
+
+/* animations */
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* -------- HOME PAGE MOBILE -------- */
+
+/* navbar */
+
+.navbar-title {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: var(--title-font-size);
+}
+
+.navbar-title:hover {
+  text-decoration: none;
+  color: var(--orange);
+  opacity: 0.8;
+}
+
+/* banner */
+
+.header {
+  position: relative;
+}
+
+.header-img {
+  height: 40vh;
+  width: 100vw;
+  margin-bottom: var(--section-margin);
+}
+
+.header-text {
+  width: 100%;
+  color: var(--orange);
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  -webkit-animation: fadein 1s ease-in;
+  -moz-animation: fadein 1s ease-in;
+  animation: fadein 1s ease-in;
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  display: none;
+}
+
+/* ticketing */
+
+form {
+  text-align: center;
+  background: var(--content-bg-color);
+  width: 90vw;
+  margin: auto;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: var(--section-margin);
+}
+
+.form-title {
+  font-weight: bold;
+  font-size: var(--title-font-size);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  font-weight: bold;
+}
+
+.form-label {
+  margin-top: 0.7rem;
+}
+
+.form-input {
+  width: 2.5em;
+  height: 2em;
+}
+
+.form-price {
+  margin-top: 1em;
+}
+
+.form-submit {
+  width: 90%;
+  height: 3em;
+  background: var(--orange);
+  color: var(--content-bg-color);
+  border: none;
+  border-radius: 5px;
+}
+
+/* news */
+
+.news {
+  margin-bottom: var(--section-margin);
+}
+.news-title {
+  font-weight: bold;
+  font-size: var(--title-font-size);
+  margin-left: 1em;
+}
+
+.news-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* questions */
+
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--section-margin);
+}
+
+.questions-button {
+  width: 65vw;
+  height: 3em;
+  background: var(--orange);
+  color: var(--content-bg-color);
+  border: none;
+  border-radius: 5px;
+}
+
+/* -------- DESKTOP -------- */
+
+@media screen and (min-width: 768px) {
+  /* -------- HOME PAGE DESKTOP -------- */
+
+  /* navbar */
+
+  .navbar-title {
+    margin-left: 2em;
+  }
+
+  .navbar-content {
+    margin-left: auto;
+    margin-right: 2em;
+  }
+
+  /* banner */
+
+  .header-img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .header-text {
+    width: 60vw;
+    top: 65%;
+    font-size: 7rem;
+  }
+
+  .arrow {
+    display: block;
+    width: 0;
+    color: grey;
+    position: absolute;
+    margin: auto;
+    top: 92%;
+    left: 50%;
+  }
+
+  .arrow:hover {
+    color: grey;
+    text-decoration: none;
+  }
+
+  .bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+  }
+
+  /* ticketing */
+
+  form {
+    width: 50vw;
+    margin: auto;
+  }
+
+  .form-container {
+    flex-direction: row;
+  }
+
+  .form-group-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-group {
+    width: 50%;
+  }
+
+  .form-input {
+    width: 20%;
+  }
+
+  .total {
+    margin-bottom: 2rem;
+  }
+
+  /* news */
+
+  .news-articles {
+    flex-direction: row;
+  }
+
+  /* questions */
+
+  .questions-button {
+    width: 20vw;
+  }
+}
