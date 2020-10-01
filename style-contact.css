@@ -6,13 +6,22 @@
 body {
     background-color: #F3F3F3;
     font-family: 'Roboto', sans-serif;
-    margin: 30px;
+    margin: 4vh;
 }
 
 h2 {
     font-size: 1.5rem;
     font-weight: 800;
 }
+
+h2:after {
+    content: ' ';
+    display: block;
+    border-bottom: 3px solid #FF881B;
+    padding-top: 0.8vh;
+    width: 10vh;
+}
+
 .introContact {
     margin-top: 30px;
 }
@@ -23,10 +32,11 @@ h2 {
 }
 
 .contactForm > input, textarea {
-    margin: 12px 0px;
-    padding: 15px;
+    margin: 1.5vh 0;
+    padding: 2vh;
+    font-family: 'Robot', sans-serif;
     border: 1px solid #DFDFDF;
-    border-radius: 0.5vh;
+    border-radius: 3px;
 }
 
 #contactSend {
@@ -34,7 +44,7 @@ h2 {
     background-color: #FF881B;
     color: white;
     padding: 10px 20px;
-    border-radius: 5%;
+    border-radius: 3px;
     border: none;
 }
 
@@ -49,6 +59,9 @@ h2 {
 }
 
 .locationContainer {
+    background-color: white;
+    border-radius: 3px;
+    padding: 20px;
     margin-top: 40px;
 }
 
@@ -89,18 +102,41 @@ h2 {
     align-items: center;
     background-color: white;
     max-width: 50vh;
-    border-radius: 0.5vh;
+    border-radius: 3px;
     margin: 10px 5px;
 }
 
 .cardHotelImg {
     grid-area: 1 / 1 / 4 / 2;
-    border-radius: 0.5vh;
+    border-radius: 3px;
     width: 25vh;
 }
 
 .cardHotelInfo {
     grid-area: 1 / 2 / 3 / 4;
+    padding-top: 1.5vh;
+}
+
+.cardHotelInfo > p {
+    margin-bottom: 2vh;
+}
+
+.infoButton {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #FF881B; 
+    border-radius: 4px;
+    background-color: white;
+    border : 2px solid #FF881B;
+    padding: 0.8vh;
+
+}
+
+.infoButton:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #FF881B;
+
 }
 
 .cardHotelIcons {
@@ -115,6 +151,17 @@ h2 {
 
 
 @media screen and (min-width: 768px) {
+    .blocContact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .contactForm {
+        width: 100vh;
+    }
+
     .blocLocation {
         flex-direction: row;
         align-items: center;
