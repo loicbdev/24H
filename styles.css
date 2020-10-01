@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-  --main-bg-color: #e5e5e5;
+  --main-bg-color: #5b78c7;
   --content-bg-color: #ffffff;
   --orange: #ff881b;
+  --section-margin: 2em;
   --title-font-size: 2rem;
 }
 
@@ -37,6 +38,7 @@ body {
 .header-img {
   height: 40vh;
   width: 100vw;
+  margin-bottom: var(--section-margin);
 }
 
 /* ticketing */
@@ -44,6 +46,11 @@ body {
 form {
   text-align: center;
   background: var(--content-bg-color);
+  width: 90vw;
+  margin: auto;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: var(--section-margin);
 }
 
 .form-title {
@@ -80,12 +87,12 @@ form {
 }
 
 .form-input {
-  width: 15%;
+  width: 2.5em;
   height: 2em;
 }
 
 .form-price {
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 .form-submit {
@@ -97,9 +104,40 @@ form {
   border-radius: 5px;
 }
 
+/* news */
+
+.news {
+  margin-bottom: var(--section-margin);
+}
 .news-title {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: var(--title-font-size);
+  margin-left: 1em;
+}
+
+.news-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* questions */
+
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--section-margin);
+}
+
+.questions-button {
+  width: 65vw;
+  height: 3em;
+  background: var(--orange);
+  color: var(--content-bg-color);
+  border: none;
+  border-radius: 5px;
 }
 
 /* -------- DESKTOP -------- */
@@ -151,5 +189,17 @@ form {
 
   .total {
     margin-bottom: 2rem;
+  }
+
+  /* news */
+
+  .news-articles {
+    flex-direction: row;
+  }
+
+  /* questions */
+
+  .questions-button {
+    width: 20vw;
   }
 }
