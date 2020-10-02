@@ -228,6 +228,68 @@ form {
   border-radius: 5px;
 }
 
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 30vh;
+  background-color: var(--content-bg-color);
+}
+
+.footerMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+}
+
+.footerItem {
+  color: black;
+}
+
+.footerItem:hover {
+  color: black;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+li {
+  list-style-type: none;
+}
+
+.footerSocialNetworks {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.fa-instagram-square {
+  background-color: white;
+  color: white;
+  border: none;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.fa-twitter {
+  color: #1da1f3;
+}
+
 /* -------- DESKTOP -------- */
 
 @media screen and (min-width: 768px) {
@@ -324,5 +386,44 @@ form {
 
   .questions-button {
     width: 20vw;
+  }
+
+  /* footer */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    background-color: var(--content-bg-color);
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .socialNetworks .footerLogo {
+    display: block;
+    width: 100%;
+  }
+
+  .footerMenu {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .fa-twitter::before {
+    font-family: 'Font Awesome 5 Brands';
+    content: '\f099';
+  }
+
+  .fa-instagram-square::before {
+    font-family: 'Font Awesome 5 Brands';
+    content: '\e055';
+  }
+
+  .footerLogo {
+    display: block;
   }
 }
