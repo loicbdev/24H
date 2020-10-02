@@ -94,11 +94,11 @@ html body {
 
 .header-text {
   width: 80%;
-  color: var(--orange);
+  color: var(--content-bg-color);
+  text-shadow: 2px 3px 5px #2A2A2A;
   font-family: 'Anton', sans-serif;
   font-size: 3rem;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: 600;
   -webkit-animation: fadein 1s ease-in;
   -moz-animation: fadein 1s ease-in;
   animation: fadein 1s ease-in;
@@ -125,9 +125,22 @@ form {
   margin-bottom: var(--section-margin);
 }
 
+.bloc-form-title {
+  display: flex;
+  justify-content: center;
+}
+
 .form-title {
   font-weight: bold;
   font-size: var(--title-font-size);
+}
+
+.form-title:after {
+  content: ' ';
+  display: block;
+  border-bottom: 3px solid #FF881B;
+  padding-top: 0.8vh;
+  width: 10vh;
 }
 
 .form-container {
@@ -167,6 +180,20 @@ form {
   margin-top: 1em;
 }
 
+.bloc-total {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+}
+
+.total {
+  margin-right: 1vh;
+}
+
+.result {
+  font-weight: 600;
+}
+
 .form-submit {
   width: 90%;
   height: 3em;
@@ -196,6 +223,14 @@ form {
   margin-left: 1em;
 }
 
+.news-title:after {
+  content: ' ';
+  display: block;
+  border-bottom: 3px solid #FF881B;
+  padding-top: 0.8vh;
+  width: 10vh;
+}
+
 .news-articles {
   display: flex;
   flex-direction: column;
@@ -207,7 +242,6 @@ form {
   background-color: var(--content-bg-color);
   color: var(--orange);
   border: 1px solid var(--orange);
-  margin-left: 12em;
 }
 
 /* questions */
@@ -314,10 +348,6 @@ form {
 
   .card {
     width: 25vw;
-  }
-
-  .news-btn {
-    margin-left: 16em;
   }
 
   /* questions */

@@ -44,8 +44,8 @@ h2:after {
 #contactSend {
     align-self: flex-end;
     background-color: #FF881B;
-    color: white;
-    padding: 10px 20px;
+    color: white;;
+    padding: 1.1vh 5vh;
     border-radius: 5px;
     border: none;
 }
