@@ -56,7 +56,9 @@
     <!-- ticketing -->
     <section id="ticketing">
       <form action="" method="post">
-        <div class="bloc-form-title"><h2 class="form-title">BILLETERIE</h2></div>
+        <div class="bloc-form-title">
+          <h2 class="form-title">BILLETERIE</h2>
+        </div>
         <div class="form-container">
           <div class="form-group-container">
             <div class="form-group">
@@ -175,22 +177,32 @@
     <footer>
       <ul class="footerMenu">
         <li><a class="footerItem" href="home.html">Accueil</a></li>
-        <li><a class="footerItem" href="#">Histoire</a></li>
-        <li><a class="footerItem" href="#">Edition 2020</a></li>
-        <li><a class="footerItem" href="#">Infos pratiques</a></li>
+        <li class="footerItemSeparator">|</li>
+        <li><a class="footerItem" href="#"> Histoire</a></li>
+        <li class="footerItemSeparator">|</li>
+        <li><a class="footerItem" href="#"> Edition 2020</a></li>
+        <li class="footerItemSeparator">|</li>
+        <li><a class="footerItem" href="#"> Infos pratiques</a></li>
       </ul>
 
       <ul class="footerSocialNetworks">
-        <i class="fab fa-instagram-square fa-3x footerItem"></i>
-        <i class="fab fa-twitter fa-3x footerItem"></i>
+        <a href="https://www.instagram.com/">
+          <i class="fab fa-instagram fa-3x footerItem"></i>
+        </a>
+        <a href="https://twitter.com/?lang=fr">
+          <i class="fab fa-twitter fa-3x footerItem"></i>
+        </a>
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-facebook-f fa-3x footerItem"></i>
+        </a>
       </ul>
 
-      <div class="footerCopyright">
-        <p>Copyright © 2020 Bolidezzz</p>
-      </div>
-
       <div class="footerLogo">
-        <img src="http://via.placeholder.com/50x20" alt="logo" title="logo" />
+        <img
+          class="footerLogoImage"
+          src="https://placekitten.com/232/300"
+          alt="logo"
+        />
       </div>
     </footer>
     <script src="index.js"></script>
