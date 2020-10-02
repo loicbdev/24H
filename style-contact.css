@@ -22,6 +22,8 @@ h2:after {
     width: 10vh;
 }
 
+/* contact form */
+
 .introContact {
     margin-top: 30px;
 }
@@ -36,7 +38,7 @@ h2:after {
     padding: 2vh;
     font-family: 'Robot', sans-serif;
     border: 1px solid #DFDFDF;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 #contactSend {
@@ -44,7 +46,7 @@ h2:after {
     background-color: #FF881B;
     color: white;
     padding: 10px 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     border: none;
 }
 
@@ -53,6 +55,8 @@ h2:after {
     align-self: flex-start;
 }
 
+/* location : map & info */
+
 .blocLocation {
     display: flex;
     flex-direction: column;
@@ -60,7 +64,7 @@ h2:after {
 
 .locationContainer {
     background-color: white;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 20px;
     margin-top: 40px;
 }
@@ -83,6 +87,8 @@ h2:after {
     margin-right: 10px;
 }
 
+/* hotel cards */
+
 .blocHotel {
     margin-top: 70px;
 }
@@ -97,12 +103,12 @@ h2:after {
 .cardHotel {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 25% 1fr;
+    grid-template-columns: 1fr 23% 1fr;
     grid-template-rows: 20% 2fr;
     align-items: center;
     background-color: white;
     max-width: 50vh;
-    border-radius: 3px;
+    border-radius: 5px;
     margin: 10px 5px;
 }
 
@@ -118,22 +124,21 @@ h2:after {
 }
 
 .cardHotelInfo > p {
-    margin-bottom: 2vh;
+    margin-bottom: 1.2vh;
 }
 
 .infoButton {
-    text-decoration: none;
     font-size: 0.9rem;
     color: #FF881B; 
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: white;
     border : 2px solid #FF881B;
+    cursor: pointer;
     padding: 0.8vh;
 
 }
 
 .infoButton:hover {
-    text-decoration: none;
     color: white;
     background-color: #FF881B;
 
@@ -149,6 +154,8 @@ h2:after {
     padding: 0px 5px
 }
 
+
+/* desktop */
 
 @media screen and (min-width: 768px) {
     .blocContact {
