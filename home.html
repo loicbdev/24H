@@ -43,9 +43,9 @@
     </nav>
 
     <!-- banner -->
-    <header>
-      <img class="header-img" src="./images/race.jpg" alt="Le virage Dunlop" />
-      <h1 class="header-text">Les 24H du Mans</h1>
+    <header class="main-banner">
+      <h1 class="header-title">LES 24H DU MANS</h1>
+      <p class="header-text">Prepared to fight</p>
       <span>
         <a href="#ticketing" class="arrow">
           <i class="fas fa-arrow-circle-down fa-3x bounce"></i>
@@ -67,6 +67,7 @@
                 id="adult"
                 value="1"
                 max="6"
+                min="0"
               />
               <p class="form-price">x 60€</p>
             </div>
@@ -78,13 +79,14 @@
                 id="child"
                 value="1"
                 max="3"
+                min="0"
               />
               <p class="form-price">x 40€</p>
             </div>
           </div>
           <div class="form-group-container">
             <div class="bloc-total">
-              <p class="total">TOTAL:</p>
+              <p class="total">Total :</p>
               <p class="result">1000€</p>
             </div>
             <button type="submit" class="form-submit">Payer</button>
