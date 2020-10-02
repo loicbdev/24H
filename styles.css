@@ -319,6 +319,7 @@ li {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 }
+
 .fa-instagram:hover {
   color: white;
 }
@@ -329,6 +330,18 @@ li {
 
 .fa-twitter:hover {
   color: #1da1f3;
+}
+
+.fa-facebook-f {
+  color: #3d5a99;
+}
+
+.fa-facebook-f:hover {
+  color: #3d5a99;
+}
+
+.footerLogo {
+  display: none;
 }
 
 /* -------- DESKTOP -------- */
@@ -434,8 +447,8 @@ li {
   .footerMenu {
     flex-direction: column;
     justify-content: space-around;
-    text-align: left;
-    width: 20vw;
+    align-items: center;
+    width: 33vw;
     height: 100%;
   }
 
@@ -444,10 +457,16 @@ li {
   }
 
   .footerSocialNetworks {
-    width: 15vw;
+    width: 33vw;
   }
 
   .footerLogo {
     display: block;
+    width: 33vw;
+  }
+
+  .footerLogoImage {
+    height: 20vh;
+    border-radius: 50px;
   }
 }
