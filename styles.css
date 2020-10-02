@@ -95,7 +95,7 @@ html body {
 .header-text {
   width: 80%;
   color: var(--content-bg-color);
-  text-shadow: 2px 3px 5px #2A2A2A;
+  text-shadow: 2px 3px 5px #2a2a2a;
   font-family: 'Anton', sans-serif;
   font-size: 3rem;
   font-weight: 600;
@@ -138,7 +138,7 @@ form {
 .form-title:after {
   content: ' ';
   display: block;
-  border-bottom: 3px solid #FF881B;
+  border-bottom: 3px solid #ff881b;
   padding-top: 0.8vh;
   width: 10vh;
 }
@@ -226,7 +226,7 @@ form {
 .news-title:after {
   content: ' ';
   display: block;
-  border-bottom: 3px solid #FF881B;
+  border-bottom: 3px solid #ff881b;
   padding-top: 0.8vh;
   width: 10vh;
 }
@@ -277,7 +277,7 @@ footer {
 .footerMenu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   margin: 0;
   padding: 1em;
@@ -303,13 +303,11 @@ li {
   flex-direction: row;
   justify-content: space-around;
   margin: 0;
-  padding: 0;
+  padding: 0.6em;
 }
 
-.fa-instagram-square {
-  background-color: white;
+.fa-instagram {
   color: white;
-  border: none;
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
@@ -318,9 +316,18 @@ li {
     #d6249f 60%,
     #285aeb 90%
   );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.fa-instagram:hover {
+  color: white;
 }
 
 .fa-twitter {
+  color: #1da1f3;
+}
+
+.fa-twitter:hover {
   color: #1da1f3;
 }
 
@@ -421,36 +428,23 @@ li {
   /* footer */
 
   footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 15vh;
-    background-color: var(--content-bg-color);
-  }
-
-  li {
-    list-style: none;
-  }
-
-  .socialNetworks .footerLogo {
-    display: block;
-    width: 100%;
+    flex-direction: row;
   }
 
   .footerMenu {
     flex-direction: column;
+    justify-content: space-around;
     text-align: left;
+    width: 20vw;
+    height: 100%;
   }
 
-  .fa-twitter::before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f099';
+  .footerItemSeparator {
+    display: none;
   }
 
-  .fa-instagram-square::before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\e055';
+  .footerSocialNetworks {
+    width: 15vw;
   }
 
   .footerLogo {
