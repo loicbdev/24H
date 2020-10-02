@@ -2,15 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 :root {
-  --main-bg-color: #5b78c7;
+  --main-bg-color: #e5e5e5;
   --content-bg-color: #ffffff;
   --orange: #ff881b;
   --section-margin: 2em;
   --title-font-size: 2rem;
 }
 
-html {
+html body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -87,12 +88,12 @@ html {
 
 .header-img {
   height: 40vh;
-  width: 100vw;
+  width: 100%;
   margin-bottom: var(--section-margin);
 }
 
 .header-text {
-  width: 100%;
+  width: 80%;
   color: var(--orange);
   font-family: 'Anton', sans-serif;
   font-size: 3rem;
@@ -102,7 +103,7 @@ html {
   -moz-animation: fadein 1s ease-in;
   animation: fadein 1s ease-in;
   position: absolute;
-  top: 35%;
+  top: 38%;
   left: 55%;
   margin: 0;
   transform: translate(-50%, -50%);
@@ -180,6 +181,15 @@ form {
 .news {
   margin-bottom: var(--section-margin);
 }
+
+.article {
+  margin: var(--section-margin);
+}
+
+.card {
+  width: 90vw;
+}
+
 .news-title {
   font-weight: bold;
   font-size: var(--title-font-size);
@@ -191,6 +201,13 @@ form {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.news-btn {
+  background-color: var(--content-bg-color);
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  margin-left: 12em;
 }
 
 /* questions */
@@ -293,6 +310,14 @@ form {
 
   .news-articles {
     flex-direction: row;
+  }
+
+  .card {
+    width: 25vw;
+  }
+
+  .news-btn {
+    margin-left: 16em;
   }
 
   /* questions */
