@@ -348,8 +348,8 @@ li {
 
  .bloc-container {
   display: grid;
-  grid-template-rows: minmax (1fr, auto);
   grid-template-columns: 1fr;
+  grid-template-rows: minmax (1fr, auto);
   grid-column-gap: 2rem;
   grid-row-gap : 2rem;
   margin : 2rem;
@@ -369,7 +369,10 @@ li {
 .bloc-5 { grid-area: bloc-5; }
 .bloc-6 { grid-area: bloc-6; }
 
-
+.history-img {
+  width: 600px;
+  height: 350px;
+  }
 
 
 
@@ -520,6 +523,11 @@ li {
 .bloc-4 { grid-area: bloc-4; }
 .bloc-5 { grid-area: bloc-5; }
 .bloc-6 { grid-area: bloc-6; }
+
+.history-img {
+  width: 750px;
+  height: 450px;
+}
 
 }
 
