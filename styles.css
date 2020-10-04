@@ -370,8 +370,8 @@ li {
 .bloc-6 { grid-area: bloc-6; }
 
 .history-img {
-  width: 600px;
-  height: 350px;
+  width: 35rem;
+  height: 20rem;
   }
 
 
@@ -525,8 +525,8 @@ li {
 .bloc-6 { grid-area: bloc-6; }
 
 .history-img {
-  width: 750px;
-  height: 450px;
+  width: 40rem;
+  height: 25rem;
 }
 
 }
