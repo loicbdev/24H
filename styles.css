@@ -344,6 +344,7 @@ li {
   display: none;
 }
 
+
 /* -------- HISTORY PAGE MOBILE -------- */
 
 .main-container {
@@ -402,8 +403,6 @@ li {
   color: var(--orange);
   border: 1px solid var(--orange);
   }
-
-
 
 /* -------- DESKTOP -------- */
 
