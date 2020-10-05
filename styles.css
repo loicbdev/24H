@@ -314,6 +314,10 @@ footer {
   opacity: 0.8;
 }
 
+.footerItemSeparator {
+  color: white;
+}
+
 li {
   list-style-type: none;
 }
