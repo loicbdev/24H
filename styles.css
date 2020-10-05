@@ -64,6 +64,18 @@ html body {
   }
 }
 
+@keyframes animateFooter {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 /* -------- HOME PAGE MOBILE -------- */
 
 /* navbar */
@@ -275,7 +287,12 @@ footer {
   align-items: center;
   text-align: center;
   height: 30vh;
-  background-color: var(--content-bg-color);
+  width: 100%;
+  background: linear-gradient(-45deg, #01235d, #af3233, #23a6d5, #1c6bfa);
+  box-shadow: 0 30px 100px -20px rgba(0, 0, 0, 0.4);
+  background-size: 400%, 400%;
+  position: absolute;
+  animation: animateFooter 10s ease-in-out infinite;
 }
 
 .footerMenu {
@@ -288,12 +305,12 @@ footer {
 }
 
 .footerItem {
-  color: black;
+  color: white;
 }
 
 .footerItem:hover {
-  color: black;
   text-decoration: none;
+  color: #cccecf;
   opacity: 0.8;
 }
 
