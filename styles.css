@@ -83,7 +83,7 @@ html body {
 /* banner */
 
 .main-banner {
-  background-image: url("./images/race.jpg");
+  background-image: url('./images/race.jpg');
   height: 70vh;
   position: relative;
   background-position: center;
@@ -375,7 +375,7 @@ li {
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--content-bg-color);
-    text-shadow: 1px 2px 5px #2A2A2A;
+    text-shadow: 1px 2px 5px #2a2a2a;
     font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 60%;
@@ -411,7 +411,6 @@ li {
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
   }
-
 
   /* ticketing */
 
@@ -461,12 +460,13 @@ li {
 
   footer {
     flex-direction: row;
+    padding: 3em;
   }
 
   .footerMenu {
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     width: 33vw;
     height: 100%;
   }
