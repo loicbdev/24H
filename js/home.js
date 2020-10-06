@@ -16,3 +16,14 @@ const handleChange = (e, n) => {
 
 adultTicket.addEventListener('change', (e) => handleChange(e, 60));
 childTicket.addEventListener('change', (e) => handleChange(e, 40));
+
+const button = document.getElementById('ticketing-submit');
+
+button.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (state.adultTotal !== 0 || state.childTotal !== 0) {
+    alert('Payement confirmé');
+  } else {
+    alert('Merci de choisir un nombre de ticket');
+  }
+});
