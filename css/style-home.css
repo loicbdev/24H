@@ -631,7 +631,7 @@ li {
 
  .main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax (1fr, auto);
     grid-template-rows: minmax (1fr, auto);
     grid-column-gap: 2rem;
     grid-row-gap : 2rem;
@@ -669,7 +669,7 @@ li {
     display: none;
   }
 
-  .mobile-hidden{
+  .mobile-hidden {
     display: grid;
   }
 
