@@ -95,7 +95,7 @@ html body {
 /* banner */
 
 .main-banner {
-  background-image: url('./images/race.jpg');
+  background-image: url('../images/race.jpg');
   height: 70vh;
   position: relative;
   background-position: center;

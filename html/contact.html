@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="Les 24H du Mans" />
+    <meta
+      author="Brice Mezerette, Anais Cotinet, Loic Bodolec, Nicolas Mercier"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style-contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b168343220.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact | 24H</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+
+    <!-- contact form -->
+    <section class="blocContact">
+      <h2>CONTACT</h2>
+      <p class="introContact">
+        Une question ? Remplissez le formulaire ci-dessous et nous vous
+        répondrons dans les meilleurs délais !
+      </p>
+      <form class="contactForm">
+        <label for="contactName">Nom, prénom :</label>
+        <input
+          id="contactName"
+          type="text"
+          name="name"
+          placeholder="John Doe"
+        />
+        <label for="contactEmail">Email :</label>
+        <input
+          id="contactEmail"
+          type="email"
+          name="email"
+          placeholder="johndoe@mail.com"
+        />
+        <label for="contactMessage">Message :</label>
+        <textarea
+          name="message"
+          id="contactMessage"
+          placeholder="Votre message..."
+        ></textarea>
+        <input type="submit" name="send" id="contactSend" value="ENVOYER" />
+      </form>
+    </section>
+
+    <!-- location : map & info -->
+    <section class="blocLocation">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2671.985463080106!2d0.2056818156426801!3d47.95600517920942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e28fad5242c195%3A0xe9ae326c6c02c174!2sCircuit%20des%2024%20Heures%20du%20Mans!5e0!3m2!1sfr!2sfr!4v1601459914712!5m2!1sfr!2sfr"
+        width="100%"
+        height="500"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+      <section class="locationContainer">
+        <h2>COORDONNÉES</h2>
+        <div class="location">
+          <p>Place Luigi Chinetti, 72019 Le Mans</p>
+          <i class="fas fa-phone-alt"></i>
+          <a class="locationTel" href="tel:+33243402424">0243402424</a>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:hello24h@teambolides.com">hello24h@teambolides.com</a>
+        </div>
+      </section>
+    </section>
+    <!-- hotel cards -->
+    <section class="blocHotel">
+      <h2>SE LOGER</h2>
+      <section class="allCardHotel">
+        <section class="cardHotel">
+          <img
+            class="cardHotelImg"
+            src="../images/hotel_room1.png"
+            alt="hotel 1"
+          />
+          <div class="cardHotelInfo">
+            <p>Brit Hôtel Le Cottage</p>
+            <button
+              class="infoButton"
+              onclick="window.open('https://hotel-le-mans-cottage.brithotel.fr');"
+            >
+              Voir le site web
+            </button>
+          </div>
+          <div class="cardHotelIcons">
+            <i class="fas fa-utensils fa-sm"></i>
+            <i class="fas fa-bed fa-sm"></i>
+            <i class="fas fa-wifi fa-sm"></i>
+          </div>
+        </section>
+        <section class="cardHotel">
+          <img
+            class="cardHotelImg"
+            src="../images/hotel_room2.png"
+            alt="hotel 2"
+          />
+          <div class="cardHotelInfo">
+            <p>Cabane du circuit</p>
+            <button
+              class="infoButton"
+              onclick="window.open('https://hotel-le-mans-cottage.brithotel.fr');"
+            >
+              Voir le site web
+            </button>
+          </div>
+          <div class="cardHotelIcons">
+            <i class="fas fa-utensils fa-sm"></i>
+            <i class="fas fa-bed fa-sm"></i>
+            <i class="fas fa-wifi fa-sm"></i>
+          </div>
+        </section>
+        <section class="cardHotel">
+          <img
+            class="cardHotelImg"
+            src="../images/hotel_room1.png"
+            alt="hotel 3"
+          />
+          <div class="cardHotelInfo">
+            <p>Cabane du circuit</p>
+            <button
+              class="infoButton"
+              onclick="window.open('https://hotel-le-mans-cottage.brithotel.fr');"
+            >
+              Voir le site web
+            </button>
+          </div>
+          <div class="cardHotelIcons">
+            <i class="fas fa-utensils fa-sm"></i>
+            <i class="fas fa-bed fa-sm"></i>
+            <i class="fas fa-wifi fa-sm"></i>
+          </div>
+        </section>
+      </section>
+    </section>
+    <footer></footer>
+  </body>
+</html>
