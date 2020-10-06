@@ -385,7 +385,9 @@ li {
 .main-container {
   background-color: white;
   display: flex;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-inline: 2rem;
+  margin-bottom: 4rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -394,57 +396,59 @@ li {
 
 .box-1 {
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  /*margin: 2rem*/
   }
 
 .box-2 {  
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-self: center;
-  margin: 2rem;
+  padding: 1rem;
+  /*margin: 2rem*/
   }
 
 .box-3 {
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  /*margin: 2rem*/
   }
 
 .box-4 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  padding: 1rem;
+  /*margin: 2rem*/
   }
 
 .box-5 {
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  /*margin: 2rem*/
   }
 
 .box-6 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  padding: 1rem;
+  /*margin: 2rem*/
   }
 
 
 .history-img {
-  width: 20rem;
-  height: 12.5rem;
+  width: 15rem;
+  height: 10rem;
   }
 
 .fa-car {
@@ -627,8 +631,8 @@ li {
 
  .main-container {
     display: grid;
-    grid-template-columns: 1fr;
-    /*grid-template-rows: minmax (1fr, auto);*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax (1fr, auto);
     grid-column-gap: 2rem;
     grid-row-gap : 2rem;
     margin : 2rem;
@@ -651,8 +655,9 @@ li {
   }
 
   .history-img {
-    width: 45rem;
-    height: 30rem;
+    width: 35rem;
+    height: 22.5rem;
+    margin: auto;
   }
 
   .history-img:hover{ 
