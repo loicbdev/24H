@@ -66,8 +66,9 @@
               <input
                 type="number"
                 class="form-input"
+                name="adultTotal"
                 id="adult"
-                value="1"
+                value="0"
                 max="6"
                 min="0"
               />
@@ -78,8 +79,9 @@
               <input
                 type="number"
                 class="form-input"
+                name="childTotal"
                 id="child"
-                value="1"
+                value="0"
                 max="3"
                 min="0"
               />
@@ -89,7 +91,7 @@
           <div class="form-group-container">
             <div class="bloc-total">
               <p class="total">Total :</p>
-              <p class="result">1000€</p>
+              <p id="result" class="result"></p>
             </div>
             <button type="submit" class="form-submit">Payer</button>
           </div>
