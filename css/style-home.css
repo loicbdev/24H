@@ -95,7 +95,7 @@ html body {
 /* banner */
 
 .main-banner {
-  background-image: url('./images/race.jpg');
+  background-image: url('../images/race.jpg');
   height: 70vh;
   position: relative;
   background-position: center;
@@ -115,10 +115,10 @@ html body {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   -webkit-animation: fadein 1s ease-in;
   -moz-animation: fadein 1s ease-in;
   animation: fadein 1s ease-in;
-  transform: translate(-50%, -50%);
 }
 
 .header-text {
@@ -156,7 +156,7 @@ form {
   display: block;
   border-bottom: 3px solid #ff881b;
   padding-top: 0.8vh;
-  width: 10vh;
+  width: 5vw;
 }
 
 .form-container {
