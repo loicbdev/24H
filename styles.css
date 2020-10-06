@@ -438,6 +438,10 @@ li {
   border: 1px solid var(--orange);
   }
 
+.mobile-hidden{
+  display: none;
+}
+
 /* -------- DESKTOP -------- */
 
 @media screen and (min-width: 768px) {
@@ -624,6 +628,10 @@ li {
 
   .history-btn {
     display: none;
+  }
+
+  .mobile-hidden{
+    display: grid;
   }
 
 }
