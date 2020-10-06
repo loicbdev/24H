@@ -6,7 +6,12 @@
 body {
     background-color: #F3F3F3;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+main {
     margin: 4vh;
+    margin-top: 6vh;
 }
 
 h2 {
@@ -19,8 +24,22 @@ h2:after {
     display: block;
     border-bottom: 3px solid #FF881B;
     padding-top: 0.8vh;
-    width: 10vh;
+    width: 5vw;
 }
+
+/* navbar */
+
+.navbar-title {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .navbar-title:hover {
+    text-decoration: none;
+    color: #FF881B;
+    opacity: 0.8;
+  }
 
 /* contact form */
 
@@ -103,11 +122,11 @@ h2:after {
 .cardHotel {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 23% 1fr;
+    grid-template-columns: 1fr 19% 1fr;
     grid-template-rows: 20% 2fr;
     align-items: center;
     background-color: white;
-    max-width: 50vh;
+    max-width: 100vw;
     border-radius: 5px;
     margin: 10px 5px;
 }
@@ -154,21 +173,114 @@ h2:after {
     padding: 0px 5px
 }
 
+/* footer */
 
-/* desktop */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+    background-color: #343B3F;
+  }
+  
+  .footerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+  }
+  
+  .footerItem {
+    color: white;
+  }
+  
+  .footerItem:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .footerSocialNetworks {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0.6em;
+  }
+  
+  .fa-instagram {
+    color: white;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  
+  .fa-instagram:hover {
+    color: white;
+  }
+  
+  .fa-twitter {
+    color: #1da1f3;
+  }
+  
+  .fa-twitter:hover {
+    color: #1da1f3;
+  }
+  
+  .fa-facebook-f {
+    color: #3d5a99;
+  }
+  
+  .fa-facebook-f:hover {
+    color: #3d5a99;
+  }
+  
+  .footerLogo {
+    display: none;
+  }
+  
+
+/* DESKTOP */
 
 @media screen and (min-width: 768px) {
+/* navbar */
+    .navbar-title {
+        margin-left: 2em;
+    }
+
+    .navbar-content {
+        margin-left: auto;
+        margin-right: 2em;
+    }
+
+/* contact form */
     .blocContact {
         display: flex;
         flex-direction: column;
         align-items: center;
         
     }
-
     .contactForm {
-        width: 100vh;
+        width: 60vw;
     }
 
+/* hotel cards */
     .blocLocation {
         flex-direction: row;
         align-items: center;
@@ -179,8 +291,43 @@ h2:after {
         justify-content: space-around;
     }
 
+    .cardHotel{
+        grid-template-columns: 1fr 25% 1fr;
+    }
+
     .locationContainer {
         margin: 0px 40px;
-        width: 120vh;
+        width: 90vw;
     }
+
+/* footer */
+  footer {
+    flex-direction: row;
+  }
+
+  .footerMenu {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 33vw;
+    height: 100%;
+  }
+
+  .footerItemSeparator {
+    display: none;
+  }
+
+  .footerSocialNetworks {
+    width: 33vw;
+  }
+
+  .footerLogo {
+    display: block;
+    width: 33vw;
+  }
+
+  .footerLogoImage {
+    height: 20vh;
+    border-radius: 50px;
+  }
 }
