@@ -64,6 +64,18 @@ html body {
   }
 }
 
+@keyframes animateFooter {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 /* -------- HOME PAGE MOBILE -------- */
 
 /* navbar */
@@ -83,7 +95,7 @@ html body {
 /* banner */
 
 .main-banner {
-  background-image: url("./images/race.jpg");
+  background-image: url('../images/race.jpg');
   height: 70vh;
   position: relative;
   background-position: center;
@@ -275,7 +287,12 @@ footer {
   align-items: center;
   text-align: center;
   height: 30vh;
-  background-color: var(--content-bg-color);
+  width: 100%;
+  background: linear-gradient(-45deg, #01235d, #af3233, #23a6d5, #1c6bfa);
+  box-shadow: 0 30px 100px -20px rgba(0, 0, 0, 0.4);
+  background-size: 400%, 400%;
+  position: absolute;
+  animation: animateFooter 10s ease-in-out infinite;
 }
 
 .footerMenu {
@@ -288,13 +305,17 @@ footer {
 }
 
 .footerItem {
-  color: black;
+  color: white;
 }
 
 .footerItem:hover {
-  color: black;
   text-decoration: none;
+  color: #cccecf;
   opacity: 0.8;
+}
+
+.footerItemSeparator {
+  color: white;
 }
 
 li {
@@ -375,7 +396,7 @@ li {
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--content-bg-color);
-    text-shadow: 1px 2px 5px #2A2A2A;
+    text-shadow: 1px 2px 5px #2a2a2a;
     font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 60%;
@@ -411,7 +432,6 @@ li {
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
   }
-
 
   /* ticketing */
 
@@ -461,12 +481,13 @@ li {
 
   footer {
     flex-direction: row;
+    padding: 3em;
   }
 
   .footerMenu {
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     width: 33vw;
     height: 100%;
   }
