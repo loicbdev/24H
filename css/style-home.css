@@ -16,6 +16,9 @@ html body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background: var(--main-bg-color);
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -76,6 +79,28 @@ html body {
   }
 }
 
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 /* -------- HOME PAGE MOBILE -------- */
 
 /* navbar */
@@ -113,7 +138,7 @@ html body {
   font-family: 'Anton', sans-serif;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-animation: fadein 1s ease-in;
@@ -125,13 +150,108 @@ html body {
   visibility: hidden;
 }
 
+/* modal newsletter */
+
+.newsletter-button {
+  width: 55vw;
+  height: 3em;
+  background: var(--orange);
+  color: var(--content-bg-color);
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 50%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #343b3f;
+  padding: 20px;
+  margin: auto;
+  width: 90%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.close-btn {
+  align-self: flex-end;
+  color: lightgray;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: darkgray;
+}
+
+.modal-content > h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.newsletter-form > input,
+textarea {
+  margin-bottom: 1.5vh;
+  padding: 1.3vh;
+  font-family: 'Robot', sans-serif;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+}
+
+.newsletter-check {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.newsletter-check > input {
+  height: 20px;
+  width: 20px;
+  margin-right: 4vw;
+}
+
+#contactSend {
+  align-self: flex-end;
+  background-color: #ff881b;
+  color: white;
+  padding: 1.1vh 5vh;
+  border-radius: 5px;
+  border: none;
+}
+
 .arrow {
   display: none;
 }
 
 /* ticketing */
 
-form {
+.form-ticketing {
   text-align: center;
   background: var(--content-bg-color);
   width: 90vw;
@@ -231,6 +351,10 @@ form {
 
 .card {
   width: 90vw;
+}
+
+.card:hover {
+  border: 2px solid var(--orange);
 }
 
 .news-title {
@@ -371,6 +495,17 @@ li {
 
 /* -------- HISTORY PAGE MOBILE -------- */
 
+/* banner */
+
+.history-banner {
+  height: 70vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: var(--section-margin);
+}
+
 .header-img {
   width: 100%;
   height: 70vh;
@@ -384,7 +519,9 @@ li {
 .main-container {
   background-color: white;
   display: flex;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-inline: 2rem;
+  margin-bottom: 4rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -393,56 +530,58 @@ li {
 
 .box-1 {
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  /*margin: 2rem*/
 }
 
 .box-2 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-self: center;
-  margin: 2rem;
+  padding: 1rem;
+  /*margin: 2rem*/
 }
 
 .box-3 {
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  /*margin: 2rem*/
 }
 
 .box-4 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  padding: 1rem;
+  /*margin: 2rem*/
 }
 
 .box-5 {
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  /*margin: 2rem*/
 }
 
 .box-6 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 2rem;
+  padding: 1rem;
+  /*margin: 2rem*/
 }
 
 .history-img {
-  width: 20rem;
-  height: 12.5rem;
+  width: 15rem;
+  height: 10rem;
 }
 
 .fa-car {
@@ -504,13 +643,33 @@ li {
     text-shadow: 1px 2px 5px #2a2a2a;
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top: 60%;
+    top: 56%;
     left: 50%;
     -webkit-animation: fadein 1s ease-in;
     -moz-animation: fadein 1s ease-in;
     animation: fadein 1s ease-in;
     transform: translate(-50%, -50%);
-    margin-top: 5vh;
+  }
+
+  .newsletter-button {
+    width: 20vw;
+    height: 3em;
+    background: var(--orange);
+    color: var(--content-bg-color);
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 66%;
+    left: 50%;
+  }
+
+  .modal-content {
+    width: 40%;
+  }
+
+  .newsletter-check > input {
+    margin-right: 1vw;
   }
 
   .main-banner {
@@ -524,7 +683,7 @@ li {
     position: absolute;
     margin: auto;
     top: 80%;
-    left: 50%;
+    left: 49%;
   }
 
   .arrow:hover {
@@ -540,7 +699,7 @@ li {
 
   /* ticketing */
 
-  form {
+  .form-ticketing {
     width: 60vw;
     margin: 10vh auto;
   }
@@ -617,6 +776,10 @@ li {
 
   /* -------- HISTORY PAGE DESKTOP -------- */
 
+  .history-banner {
+    height: 100vh;
+  }
+
   .header-img {
     width: 100%;
     height: 90vh;
@@ -625,8 +788,8 @@ li {
 
   .main-container {
     display: grid;
-    grid-template-columns: 1fr;
-    /*grid-template-rows: minmax (1fr, auto);*/
+    grid-template-columns: minmax (1fr, auto);
+    grid-template-rows: minmax (1fr, auto);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
     margin: 2rem;
@@ -661,8 +824,9 @@ li {
   }
 
   .history-img {
-    width: 45rem;
-    height: 30rem;
+    width: 35rem;
+    height: 22.5rem;
+    margin: auto;
   }
 
   .history-img:hover {

@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta description="Tout savoir sur les 24H du Mans" />
     <meta
-      author="Loic Bodolec, Anais Cotinet, Brice Mezerette et Nicolas Mercier"
+      name="description"
+      content="Acheter ses billets et tout savoir sur les 24H du Mans, son histoire, les actualités et les résultats de la dernière édition."
+    />
+    <meta
+      name="author"
+      content="Loic Bodolec, Anais Cotinet, Brice Mezerette et Nicolas Mercier"
     />
     <link
       rel="stylesheet"
@@ -15,7 +19,7 @@
     />
     <link
     href=“https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap”
-    rel=“stylesheet”>
+    rel=“stylesheet” />
     <link rel="stylesheet" href="../css/style-home.css" />
     <title>Accueil | 24H</title>
   </head>
@@ -50,6 +54,44 @@
     <header class="main-banner">
       <h1 class="header-title">LES 24H DU MANS</h1>
       <p class="header-text">Prepared to fight</p>
+
+      <!-- Modal Newsletter -->
+      <button
+        type="button"
+        class="newsletter-button"
+        data-toggle="modal"
+        data-target="#staticBackdrop"
+      >
+        S'INSCRIRE À LA NEWSLETTER
+      </button>
+
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h3>Inscription à la Newsletter</h3>
+          <form class="newsletter-form">
+            <label for="fName">Prénom :</label>
+            <input type="text" name="fname" id="fName" placeholder="Jean" />
+            <label for="mailAdress">Email :</label>
+            <input
+              type="email"
+              name="email"
+              id="mailAdress"
+              placeholder="jean@mail.com"
+            />
+            <label class="newsletter-check">
+              <input type="checkbox" checked="checked" name="subscribe" />
+              J'accepte de recevoir les offres des partenaires
+            </label>
+            <input
+              type="submit"
+              name="inscription"
+              id="contactSend"
+              value="JE M'INSCRIS"
+            />
+          </form>
+        </div>
+      </div>
       <span>
         <a href="#ticketing" class="arrow">
           <i class="fas fa-arrow-circle-down fa-3x bounce"></i>
@@ -59,7 +101,7 @@
 
     <!-- ticketing -->
     <section id="ticketing">
-      <form action="" method="post">
+      <form class="form-ticketing" action="" method="post">
         <div class="bloc-form-title">
           <h2 class="form-title">BILLETERIE</h2>
         </div>
@@ -98,7 +140,7 @@
               <p id="result" class="result"></p>
             </div>
             <button id="ticketing-submit" type="submit" class="form-submit">
-              Payer
+              PAYER
             </button>
           </div>
         </div>
@@ -112,15 +154,32 @@
         <article class="article">
           <div class="card">
             <img
-              src="../images/race4.jpg"
+              src="../images/crowd.jpg"
               class="card-img-top"
-              alt="Actualités 1"
+              alt="Les chiffres de l'édition 2020"
             />
             <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
+              <h5 class="card-title">Les chiffres de l'édition 2020</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
-                ipsum dolor sit amet Lorem ipsum dolor sit amet
+                Malgré l'épidémie, 2020 aura encore été une belle année pour les
+                24. Retour en quelques chiffres sur cette édition.
+              </p>
+              <a href="news.html" class="btn news-btn">Voir plus</a>
+            </div>
+          </div>
+        </article>
+        <article class="article">
+          <div class="card">
+            <img
+              src="../images/pilote.jpg"
+              class="card-img-top"
+              alt="Interview - LOUIS DELETRAZ"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Interview - LOUIS DELETRAZ</h5>
+              <p class="card-text">
+                Pour ses premières 24 Heures du Mans, Louis Deletraz s’est
+                classé quatrième du classement général.
               </p>
               <a href="news.html" class="btn news-btn">Voir plus</a>
             </div>
@@ -131,30 +190,15 @@
             <img
               src="../images/race4.jpg"
               class="card-img-top"
-              alt="Actualités 2"
+              alt="Exposition 917 - une saga en 7 voitures"
             />
             <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
+              <h5 class="card-title">
+                Exposition 917 - une saga en 7 voitures
+              </h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
-                ipsum dolor sit amet Lorem ipsum dolor sit amet
-              </p>
-              <a href="news.html" class="btn news-btn">Voir plus</a>
-            </div>
-          </div>
-        </article>
-        <article class="article">
-          <div class="card">
-            <img
-              src="../images/race2.jpg"
-              class="card-img-top"
-              alt="Actualités 3"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Lorem ipsum</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum
-                dolor sit amet, consectetur adipiscing
+                L’exposition 917 1970 Made for Le Mans rassemble sept châssis
+                emblématiques de l’histoire de la Porsche 917
               </p>
               <a href="news.html" class="btn news-btn">Voir plus</a>
             </div>

@@ -22,8 +22,37 @@ const button = document.getElementById('ticketing-submit');
 button.addEventListener('click', (e) => {
   e.preventDefault();
   if (state.adultTotal !== 0 || state.childTotal !== 0) {
-    alert('Payement confirmé');
+    button.innerHTML = 'Loading...';
+    setTimeout(() => {
+      alert('Payement confirmé');
+      button.innerHTML = 'Payer';
+    }, 1000);
   } else {
     alert('Merci de choisir un nombre de ticket');
   }
 });
+
+
+const modalBtn = document.querySelector(".newsletter-button")
+const modal = document.querySelector(".modal")
+const closeBtn = document.querySelector(".close-btn")
+const sendBtn = document.getElementById("contactSend");
+
+modalBtn.addEventListener('click', function(){
+  modal.style.display = "block"
+})
+
+closeBtn.addEventListener('click', function(){
+  modal.style.display = "none"
+})
+
+window.addEventListener('click', function(e){
+  if(e.target == modal){
+    modal.style.display = "none"
+  }
+})
+
+sendBtn.addEventListener('click', function()
+{
+  alert(`Merci, vous êtes désormais inscrit et vous recevrez votre première newsletter très bientôt ! `);
+})
