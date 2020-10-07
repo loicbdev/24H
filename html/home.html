@@ -50,6 +50,28 @@
     <header class="main-banner">
       <h1 class="header-title">LES 24H DU MANS</h1>
       <p class="header-text">Prepared to fight</p>
+    
+      <!-- Modal Newsletter -->
+      <button type="button" class="newsletter-button" data-toggle="modal" data-target="#staticBackdrop">
+        S'INSCRIRE À LA NEWSLETTER
+      </button>
+
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h3>Inscription à la Newsletter</h3>
+          <form class="newsletter-form">
+            <label for="fName">Prénom :</label>
+            <input type="text" name="fname" id="fName" placeholder="Jean"/>
+            <label for="mailAdress">Email :</label>
+            <input type="mail" name="email" id="mailAdress" placeholder="jean@mail.com"/>
+            <label class="newsletter-check">
+              <input type="checkbox" checked="checked" name="subscribe"> J'accepte de recevoir les offres des partenaires
+            </label>
+            <input type="submit" name="inscription" id="contactSend" value="JE M'INSCRIS" />
+          </form>
+        </div>
+      </div>
       <span>
         <a href="#ticketing" class="arrow">
           <i class="fas fa-arrow-circle-down fa-3x bounce"></i>
@@ -59,7 +81,7 @@
 
     <!-- ticketing -->
     <section id="ticketing">
-      <form action="" method="post">
+      <form class="form-ticketing" action="" method="post">
         <div class="bloc-form-title">
           <h2 class="form-title">BILLETERIE</h2>
         </div>
@@ -98,7 +120,7 @@
               <p id="result" class="result"></p>
             </div>
             <button id="ticketing-submit" type="submit" class="form-submit">
-              Payer
+              PAYER
             </button>
           </div>
         </div>
@@ -117,7 +139,7 @@
               alt="Actualités 1"
             />
             <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
+              <h5 class="card-title">Lorem ipsum</h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
                 ipsum dolor sit amet Lorem ipsum dolor sit amet
@@ -134,7 +156,7 @@
               alt="Actualités 2"
             />
             <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
+              <h5 class="card-title">Lorem ipsum</h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
                 ipsum dolor sit amet Lorem ipsum dolor sit amet
