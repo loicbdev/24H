@@ -372,6 +372,17 @@ li {
 
 /* -------- HISTORY PAGE MOBILE -------- */
 
+/* banner */
+
+.history-banner {
+  height: 70vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: var(--section-margin);
+}
+
 .header-img {
   width: 100%;
   height: 70vh;
@@ -622,6 +633,10 @@ li {
   }
 
  /* -------- HISTORY PAGE DESKTOP -------- */
+
+ .history-banner {
+  height: 100vh;
+}
 
  .header-img {
     width: 100%;
