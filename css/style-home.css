@@ -76,6 +76,16 @@ html body {
   }
 }
 
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
 /* -------- HOME PAGE MOBILE -------- */
 
 /* navbar */
@@ -174,15 +184,6 @@ html body {
 
 .close-btn:hover {
   color: darkgray;
-}
-
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
 }
 
 .modal-content > h3 {
