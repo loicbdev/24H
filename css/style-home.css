@@ -498,16 +498,7 @@ li {
 /* banner */
 
 .history-banner {
-  height: 70vh;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: var(--section-margin);
-}
-
-.header-img {
-  width: 100%;
+  background-image: url('../images/history_LeMans_1923.jpg');
   height: 70vh;
   position: relative;
   background-position: center;
@@ -520,7 +511,7 @@ li {
   background-color: white;
   display: flex;
   margin-top: 1rem;
-  margin-inline: 2rem;
+  margin-inline: 1rem;
   margin-bottom: 4rem;
   flex-direction: column;
   align-items: center;
@@ -529,59 +520,55 @@ li {
 }
 
 .box-1 {
-  background-color: white;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  /*margin: 2rem*/
+  padding: 1rem;
 }
 
-.box-2 {
+.box-2 {  
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1rem;
-  /*margin: 2rem*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
+  
 
 .box-3 {
-  background-color: white;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  /*margin: 2rem*/
+  padding: 1rem;
 }
 
 .box-4 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1rem;
-  /*margin: 2rem*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .box-5 {
-  background-color: white;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  /*margin: 2rem*/
+  padding: 1rem;
 }
 
 .box-6 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1rem;
-  /*margin: 2rem*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .history-img {
-  width: 15rem;
-  height: 10rem;
+  align-self: center;
+  width: 18rem;
+  height: 12.5rem;
 }
 
 .fa-car {
@@ -609,7 +596,7 @@ li {
   align-self: flex-end;
 }
 
-.mobile-hidden {
+.mobile-hidden{
   display: none;
 }
 
@@ -780,58 +767,69 @@ li {
     height: 100vh;
   }
 
-  .header-img {
+ .header-img {
     width: 100%;
     height: 90vh;
     background-size: cover;
   }
 
   .main-container {
+    margin-top: 1rem;
+    margin-inline: 8rem;
+    margin-bottom: 4rem;
+  }
+
+
+  .creation, .circuit, .innovation {
+    display: flex;
+    margin: 4rem;
+  }
+
+  .box-1 { order: 1; }
+  .box-2 { order: 2; }
+  .box-3 { order: 2; }
+  .box-4 { order: 1; }
+  .box-5 { order: 1; }
+  .box-6 { order: 2; }
+
+
+
+  /*
+  .main-container {
     display: grid;
     grid-template-columns: minmax (1fr, auto);
     grid-template-rows: minmax (1fr, auto);
     grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    margin: 2rem;
+    grid-row-gap : 2rem;
+    margin : 2rem;
     text-align: justify;
     grid-template-areas:
-      'box-1 box-2'
-      'box-4 box-3'
-      'box-5 box-6';
+    "box-1 box-2"
+    "box-4 box-3"
+    "box-5 box-6";
   }
 
-  .box-1 {
-    grid-area: box-1;
-  }
-  .box-2 {
-    grid-area: box-2;
-  }
-  .box-3 {
-    grid-area: box-3;
-  }
-  .box-4 {
-    grid-area: box-4;
-  }
-  .box-5 {
-    grid-area: box-5;
-  }
-  .box-6 {
-    grid-area: box-6;
-  }
+  .box-1 { grid-area: box-1; }
+  .box-2 { grid-area: box-2; }
+  .box-3 { grid-area: box-3; }
+  .box-4 { grid-area: box-4; }
+  .box-5 { grid-area: box-5; }
+  .box-6 { grid-area: box-6; }
+  */
 
   .main-container > btn history-btn {
     display: none;
   }
 
   .history-img {
-    width: 35rem;
-    height: 22.5rem;
+    width: 27.5rem;
+    height: 18rem;
     margin: auto;
   }
 
-  .history-img:hover {
+  .history-img:hover{ 
     transition: all 1s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(2);
   }
 
   .history-btn {
@@ -839,6 +837,7 @@ li {
   }
 
   .mobile-hidden {
-    display: grid;
+    display: block;
   }
+
 }
