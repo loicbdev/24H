@@ -38,7 +38,7 @@ modalBtn.addEventListener('click', function(){
   modal.style.display = "block"
 })
 
-closeBtn.addEventListener('click', function(e){
+closeBtn.addEventListener('click', function(){
   modal.style.display = "none"
 })
 
