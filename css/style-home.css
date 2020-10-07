@@ -388,6 +388,7 @@ li {
 
 .main-container {
   background-color: white;
+  position: relative;
   display: flex;
   margin-top: 1rem;
   margin-inline: 1rem;
@@ -633,15 +634,12 @@ li {
   }
 
   .main-container {
-    margin-top: 1rem;
-    margin-inline: 8rem;
-    margin-bottom: 4rem;
+    margin-inline: 3rem;
+    margin-bottom: 3rem;
   }
-
 
   .creation, .circuit, .innovation {
     display: flex;
-    margin: 4rem;
   }
 
   .box-1 { order: 1; }
@@ -652,8 +650,13 @@ li {
   .box-6 { order: 2; }
 
 
+  .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+    margin: 1rem;
+    padding: 1rem;
+  }
 
-  /*
+  /* CSS si organisation du main-container et de son contenu en grid
+
   .main-container {
     display: grid;
     grid-template-columns: minmax (1fr, auto);
@@ -676,13 +679,9 @@ li {
   .box-6 { grid-area: box-6; }
   */
 
-  .main-container > btn history-btn {
-    display: none;
-  }
-
   .history-img {
-    width: 27.5rem;
-    height: 18rem;
+    width: 17.5rem;
+    height: 12rem;
     margin: auto;
   }
 
@@ -691,6 +690,8 @@ li {
     transform: scale(2);
   }
 
+  /* CSS à ajouter si on veut laisser tout le texte apparent en version desktop et masquer le bouton "voir plus"
+  
   .history-btn {
     display: none;
   }
@@ -698,7 +699,7 @@ li {
   .mobile-hidden {
     display: block;
   }
-
+  */
 }
 
 
