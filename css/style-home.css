@@ -113,7 +113,7 @@ html body {
   font-family: 'Anton', sans-serif;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-animation: fadein 1s ease-in;
@@ -125,13 +125,116 @@ html body {
   visibility: hidden;
 }
 
+/* modal newsletter */
+
+.newsletter-button {
+  width: 55vw;
+  height: 3em;
+  background: var(--orange);
+  color: var(--content-bg-color);
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 50%;
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  padding-top: 50px;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+  background-color: #343B3F;
+  padding: 20px; 
+  margin: auto; 
+  width: 90%;  
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.close-btn {
+  align-self: flex-end;
+  color: lightgray; 
+  font-size: 30px;  
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: darkgray;
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.modal-content > h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.newsletter-form > input, textarea {
+  margin-bottom: 1.5vh;
+  padding: 1.3vh;
+  font-family: 'Robot', sans-serif;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+}
+
+.newsletter-check {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.newsletter-check > input{
+  height: 20px;
+  width: 20px;
+  margin-right: 4vw;
+}
+
+ #contactSend {
+  align-self: flex-end;
+  background-color: #FF881B;
+  color: white;;
+  padding: 1.1vh 5vh;
+  border-radius: 5px;
+  border: none;
+} 
+
 .arrow {
   display: none;
 }
 
 /* ticketing */
 
-form {
+.form-ticketing {
   text-align: center;
   background: var(--content-bg-color);
   width: 90vw;
@@ -399,13 +502,33 @@ li {
     text-shadow: 1px 2px 5px #2a2a2a;
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top: 60%;
+    top: 56%;
     left: 50%;
     -webkit-animation: fadein 1s ease-in;
     -moz-animation: fadein 1s ease-in;
     animation: fadein 1s ease-in;
     transform: translate(-50%, -50%);
-    margin-top: 5vh;
+  }
+
+  .newsletter-button {
+    width: 20vw;
+    height: 3em;
+    background: var(--orange);
+    color: var(--content-bg-color);
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 66%;
+    left: 50%;
+  }
+
+  .modal-content {
+    width: 40%;  
+  }
+
+  .newsletter-check > input{
+    margin-right: 1vw;
   }
 
   .main-banner {
@@ -419,7 +542,7 @@ li {
     position: absolute;
     margin: auto;
     top: 80%;
-    left: 50%;
+    left: 49%;
   }
 
   .arrow:hover {
@@ -431,11 +554,11 @@ li {
     -moz-animation: bounce 3s infinite;
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
-  }
+  } 
 
   /* ticketing */
 
-  form {
+  .form-ticketing {
     width: 60vw;
     margin: 10vh auto;
   }
