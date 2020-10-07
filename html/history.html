@@ -13,7 +13,7 @@
     href=“https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap”
     rel=“stylesheet”>
     <link rel="stylesheet" href="../css/style-home.css" />
-    <title>Document</title>
+    <title>Histoire | 24H</title>
   </head>
   <body>
     <!-- navbar  -->
@@ -43,7 +43,7 @@
     </nav>
 
     <!-- banner -->
-    <header>
+    <header class="history-banner">
       <img
         class="header-img"
         src="../images/history_bannière.jpg"
@@ -61,7 +61,7 @@
           compétition dont le caractère devait contribuer à l'évolution du
           progrès technique et favoriser l'essor de l'automobile.
         </p>
-        <div class="mobile-hidden">
+        <div id="d1" class="mobile-hidden">
           <p>
             En 1922, le club annonce la création d'un nouveau type de
             compétition dans la Sarthe, une épreuve d'endurance, alors que le
@@ -80,7 +80,12 @@
             automobile.
           </p>
         </div>
-        <a href="#" class="btn history-btn">Voir plus</a>
+        <input
+          type="button"
+          id="togg1"
+          class="btn history-btn"
+          value="Voir plus"
+        />
       </div>
       <div class="box-2">
         <img
@@ -100,7 +105,7 @@
           des courses d'endurance, les 24 Heures du Mans, organisée par
           l'Automobile Club de l'Ouest (ACO) depuis 1923.
         </p>
-        <div class="mobile-hidden">
+        <div id="d2" class="mobile-hidden">
           <p>
             Il est aussi utilisé par les voitures de course anciennes lors du
             Mans Classic qui a lieu une fois tous les deux ans ainsi que par la
@@ -115,19 +120,26 @@
           <p>
             En 1972, la section du virage Porsche est réalisée pour dévier
             l'ancienne section ultra-rapide et dangereuse de Maison Blanche qui
-            passait entre les habitations du lieu-dit éponyme. En 1990, la ligne
-            droite des Hunaudières, d'une longueur de presque six kilomètres,
-            est divisée en trois portions par la réalisation de deux chicanes
-            qui ont pour but de limiter la recherche de vitesse maximale par des
-            réductions d'appuis aérodynamiques trop importantes et de limiter
-            par conséquent les différences de vitesse entre concurrents. L'envol
-            de certains véhicules était dû à la géométrie de la piste avec un
-            changement de plan qui pouvait créer un décrochage aérodynamique
-            suivant leurs configurations et réglages aérodynamiques. La bosse a
-            été aplanie pour l'édition 2001.
+            passait entre les habitations du lieu-dit éponyme.
+          </p>
+          <p>
+            En 1990, la ligne droite des Hunaudières, d'une longueur de presque
+            six kilomètres, est divisée en trois portions par la réalisation de
+            deux chicanes qui ont pour but de limiter la recherche de vitesse
+            maximale par des réductions d'appuis aérodynamiques trop importantes
+            et de limiter par conséquent les différences de vitesse entre
+            concurrents. L'envol de certains véhicules était dû à la géométrie
+            de la piste avec un changement de plan qui pouvait créer un
+            décrochage aérodynamique suivant leurs configurations et réglages
+            aérodynamiques. La bosse a été aplanie pour l'édition 2001.
           </p>
         </div>
-        <a href="#" class="btn history-btn">Voir plus</a>
+        <input
+          type="button"
+          id="togg2"
+          class="btn history-btn"
+          value="Voir plus"
+        />
       </div>
 
       <div class="box-4">
@@ -139,20 +151,22 @@
       </div>
 
       <div class="box-5">
-        <h2><i class="fas fa-tools"></i> Les innovations techniques</h2>
+        <h2><i class="fas fa-tools"></i> Les innovations</h2>
         <p>
           La course a servi d'expérimentation à de nombreux projets. Depuis le
           début, les équipes concurrentes ont innové. Le frein à disque, la
           jante, l'aérodynamisme, le pneu à carcasse radiale, le phare à LEDs,
           puis au laser, font partie des innovations testées au Mans.
         </p>
-        <div class="mobile-hidden">
+        <div id="d3" class="mobile-hidden">
           <p>
             Différents types de moteurs ont été utilisés pour gagner autant en
-            vitesse qu'en consommation. La suralimentation commença dès 1929,
-            longtemps avant la turbo compression, en 1974. En 1963, une auto
-            expérimenta une turbine à gaz, alors qu'en 1970 était présenté le
-            moteur rotatif.
+            vitesse qu'en consommation.
+          </p>
+          <p>
+            La suralimentation commença dès 1929, longtemps avant la turbo
+            compression, en 1974. En 1963, une auto expérimenta une turbine à
+            gaz, alors qu'en 1970 était présenté le moteur rotatif.
           </p>
           <p>
             En septembre 2018, dans la continuité des voitures hybrides apparues
@@ -166,7 +180,12 @@
             1933, la ligne médiane des routes françaises y est testée.
           </p>
         </div>
-        <a href="" class="btn history-btn">Voir plus</a>
+        <input
+          type="button"
+          id="togg3"
+          class="btn history-btn"
+          value="Voir plus"
+        />
       </div>
 
       <div class="box-6">
@@ -218,6 +237,7 @@
         />
       </div>
     </footer>
+    <script src="../js/history.js"></script>
     <script
       src="https://kit.fontawesome.com/b22c85a902.js"
       crossorigin="anonymous"
@@ -237,11 +257,5 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-
-    <!-- history (iconify en svg)
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    -->
   </body>
 </html>
