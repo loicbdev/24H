@@ -52,7 +52,9 @@ window.addEventListener('click', function(e){
   }
 })
 
-sendBtn.addEventListener('click', function()
+sendBtn.addEventListener('click', function(e)
 {
   alert(`Merci, vous êtes désormais inscrit et vous recevrez votre première newsletter très bientôt ! `);
+  e.preventDefault();
+  modal.style.display = "none"
 })
