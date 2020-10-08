@@ -1,0 +1,20 @@
+.news {
+  width: 90vw;
+  margin: 2em auto 2em;
+}
+
+.news-title {
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+
+.news-subtitle {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .news {
+    width: 60vw;
+  }
+}

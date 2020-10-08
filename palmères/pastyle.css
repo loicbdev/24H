@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding:0;
+    background: #E5E5E5;
+    font-family: 'Roboto';    
+}
+
+.main-header {
+    background-color: #343b3f;
+}
+
+.site-title {
+    color: white;
+    margin-left: 1em;
+}
+
+.menu {
+    flex-basis: 100%;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out;
+    visibility: hidden;
+    list-style: none;
+    padding: 0 2em;
+    text-transform: uppercase;
+}
+
+.menu li {
+    border-bottom: 1px solid #ff881b;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu-checkbox:checked ~ .menu {
+    margin: 1em 0;
+    max-height: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-checkbox {
+    opacity: 0;
+    position: absolute;
+    top: -1000px;
+
+}
+
+.menu-checkbox:focus + .menu-toggle {
+    outline: #00A1A1 auto 5px;
+}
+
+.menu-toggle {
+    padding: .5em .5em;
+    color: white;
+    font-size: 2.5em;
+}
+
+.nav-wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-wrapper {
+    display: flex;
+    
+}
+
+/*
+.banniere {
+    position: relative; 
+    width: 100%;
+    
+}
+
+.banniere img {
+    width: 100%;
+    
+}
+
+.banniere-titre {
+    color: white;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+*/
+
+.history-banner {
+    background-image: url('images/podium.jpg');
+    height: 35vh;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: var(--section-margin);
+  }
+
+  .header-title {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    color: white;
+    text-shadow: 2px 3px 6px #141414;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation: fadein 1s ease-in;
+    -moz-animation: fadein 1s ease-in;
+    animation: fadein 1s ease-in;
+  }
+
+
+.section2 {
+    height: 85em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    height: 306px;
+    width: 284px;
+    position: static;
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 40% 10% 20% 30%;
+    grid-template-columns: 2fr 2fr;
+}
+
+.cardImg1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background: url("images/toypalm.resized.jpg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(90%);  
+}
+
+.cardImg2 {
+    grid-area: 1 / 1 / 2 / 3;
+    background: url("images/united.resized.jpg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-position: bottom;
+    filter: brightness(90%);  
+}
+
+.cardImg3 {
+    grid-area: 1 / 1 / 2 / 3;
+    background: url("images/aston.resized.jpg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(90%);  
+}
+
+.cardImg4 {
+    grid-area: 1 / 1 / 2 / 3;
+    background: url("images/tfsport.resized.jpg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(90%);  
+}
+
+.cardTitle {
+    grid-area: 2 / 1 / 3 / 3;
+    font-size: 8px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;   
+}
+
+.title {
+    margin-top: 0.7em;
+    font-size: 2.1em;    
+}
+
+.cardPar {
+    grid-area: 3 / 1 / 4 / 3;
+     
+}
+
+
+.par1 {
+    line-height: 1.1em;
+    margin-top: 1.3em;
+    margin-left: 1.3em;    
+}
+
+.par2 {
+    line-height: 1.1em;
+    margin-top: 1.3em;
+    margin-left: 2.3em;    
+}
+
+.par3 {
+    line-height: 1.1em;
+    margin-top: 1.3em;
+    margin-left: 2.5em;    
+}
+
+.par4 {
+    line-height: 1.1em;
+    margin-top: 1.3em;
+    margin-left: 2.7em;    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pilot1 {
+    margin-left: 1.6em;
+}
+
+.pilot2 {
+    margin-left: 0.6em;
+}
+
+.pilot3 {
+    margin-left: 1.8em;
+}
+
+.pilot4 {
+    margin-left: 1em;
+}
+
+.cardTours {
+    grid-area: 4 / 1 / 5 / 3;
+    position: static;
+    top: -2%;
+    right: 5%;
+}
+
+.infoTours {
+   margin-left: 1.3em;
+   line-height: 1.3em;   
+}
+
+.space {
+    margin-left: 0.5em;
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+    .menu {
+        flex-basis: auto;
+        margin: 0;
+        max-height: 1000px;
+        opacity: 1;
+        padding: 0;
+        visibility: visible;
+    }
+
+    .menu li {
+        border: none;
+        display: inline-block;
+    }
+
+    .menu li a {
+        padding: .5em;
+    }
+
+    .menu-toggle, .menu-checkbox {
+        display: none;
+    }
+
+
+    .section1 {
+        background: white;
+        height: 30em;
+        overflow: auto;
+    }
+    
+    /*
+    .banniere {
+        position: relative; 
+        width: 100%;
+        
+    }
+    
+    .banniere img {
+        width: 100%;
+        
+    }
+    
+    .banniere-titre {
+        color: white;
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+    }
+    */
+
+    .history-banner {
+        background-image: url('images/podium.jpg');
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-position: 0% 17%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: var(--section-margin);
+        
+      }
+    
+      .header-title {
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        color: white;
+        text-shadow: 2px 3px 6px #141414;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-animation: fadein 1s ease-in;
+        -moz-animation: fadein 1s ease-in;
+        animation: fadein 1s ease-in;
+      }
+
+    .section2 {
+        height: 60em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card {
+        height: 214px;
+        width: 1098px;
+        position: static;
+        background: white;
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: 15% 30% 55%;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .cardImg1 {
+        grid-area: 1 / 1 / 4 / 2;
+        background: url("images/toypalm.resized.jpg");
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: brightness(90%);  
+    }
+
+    .cardImg2 {
+        grid-area: 1 / 1 / 4 / 2;
+        background: url("images/united.resized.jpg");
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        background-size: cover;
+        background-position: bottom;
+        filter: brightness(90%);  
+    }
+
+    .cardImg3 {
+        grid-area: 1 / 1 / 4 / 2;
+        background: url("images/aston.resized.jpg");
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: brightness(90%);  
+    }
+
+    .cardImg4 {
+        grid-area: 1 / 1 / 4 / 2;
+        background: url("images/tfsport.resized.jpg");
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: brightness(90%);  
+    }
+
+
+
+    .cardTitle {
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: 8px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;   
+    }
+
+    .title {
+        margin-top: 0.7em;
+        font-size: 3em;    
+    }
+
+    .cardPar {
+        grid-area: 2 / 2 / 3 / 3;    
+    }
+
+    .par1 {
+        line-height: 1.1em;
+        margin-top: 1.7em;
+        margin-left: 1.1em;
+        font-size: 1.2em;    
+    }
+
+    .par2 {
+        line-height: 1.1em;
+        margin-top: 1.7em;
+        margin-left: 1.7em;
+        font-size: 1.2em;    
+    }
+
+    .par3 {
+        line-height: 1.1em;
+        margin-top: 1.7em;
+        margin-left: 3.1em;
+        font-size: 1.2em;    
+    }
+
+    .par4 {
+        line-height: 1.1em;
+        margin-top: 1.7em;
+        margin-left: 2.7em;
+        font-size: 1.2em;    
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .pilot1 {
+        margin-left: 0em;
+    }
+
+    .pilot2 {
+        margin-left: 0em;
+    }
+
+    .pilot3 {
+        margin-left: 0em;
+    }
+
+    .pilot4 {
+        margin-left: 0em;
+    }
+
+    .cardTours {
+        grid-area: 3 / 2 / 4 / 3;
+        position: static;
+        top: 0%;
+        right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infoTours {
+        margin-left: 0em;
+        line-height: 1.3em;
+        font-size: 1.2em;   
+     }
+
+     .space {
+        margin-left: 0.5em;
+    }
+
+
+
+}
+
