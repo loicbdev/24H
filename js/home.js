@@ -36,7 +36,7 @@ button.addEventListener('click', (e) => {
 const modalBtn = document.querySelector(".newsletter-button")
 const modal = document.querySelector(".modal")
 const closeBtn = document.querySelector(".close-btn")
-const sendBtn = document.getElementById("contactSend");
+const sendBtn = document.getElementById("inscriptionSend");
 
 modalBtn.addEventListener('click', function(){
   modal.style.display = "block"
