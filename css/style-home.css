@@ -173,7 +173,6 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -236,7 +235,7 @@ textarea {
   margin-right: 4vw;
 }
 
-#contactSend {
+#inscriptionSend {
   align-self: flex-end;
   background-color: #ff881b;
   color: white;
@@ -354,7 +353,7 @@ textarea {
 }
 
 .card:hover {
-  border: 2px solid var(--orange);
+  border-bottom: 2px solid var(--orange);
 }
 
 .news-title {
@@ -410,7 +409,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 30vh;
+  height: 100vh;
   width: 100%;
   background: linear-gradient(-45deg, #01235d, #af3233, #23a6d5, #1c6bfa);
   box-shadow: 0 30px 100px -20px rgba(0, 0, 0, 0.4);
@@ -419,17 +418,23 @@ footer {
   animation: animateFooter 10s ease-in-out infinite;
 }
 
-.footerMenu {
+hr {
+  width: 90vw;
+  margin: 0;
+}
+
+.footerList {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  text-align: left;
   width: 100%;
   margin: 0;
   padding: 1em;
 }
 
 .footerItem {
-  color: white;
+  color: #212529;
 }
 
 .footerItem:hover {
@@ -438,8 +443,20 @@ footer {
   opacity: 0.8;
 }
 
+.footerList-title {
+  font-weight: bold;
+}
+
 .footerItemSeparator {
   color: white;
+}
+
+.footerList-legal-title {
+  color: #ffffff;
+}
+
+.footerList-legal {
+  color: #ffffff;
 }
 
 li {
@@ -447,12 +464,16 @@ li {
 }
 
 .footerSocialNetworks {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0;
   padding: 0.6em;
+}
+
+.footerSocialNetworks i {
+  margin-right: 1em;
 }
 
 .fa-instagram {
@@ -498,16 +519,7 @@ li {
 /* banner */
 
 .history-banner {
-  height: 70vh;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: var(--section-margin);
-}
-
-.header-img {
-  width: 100%;
+  background-image: url('../images/history_LeMans_1923.jpg');
   height: 70vh;
   position: relative;
   background-position: center;
@@ -518,9 +530,10 @@ li {
 
 .main-container {
   background-color: white;
+  position: relative;
   display: flex;
   margin-top: 1rem;
-  margin-inline: 2rem;
+  margin-inline: 1rem;
   margin-bottom: 4rem;
   flex-direction: column;
   align-items: center;
@@ -529,59 +542,54 @@ li {
 }
 
 .box-1 {
-  background-color: white;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  /*margin: 2rem*/
+  padding: 1rem;
 }
 
 .box-2 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1rem;
-  /*margin: 2rem*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .box-3 {
-  background-color: white;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  /*margin: 2rem*/
+  padding: 1rem;
 }
 
 .box-4 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1rem;
-  /*margin: 2rem*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .box-5 {
-  background-color: white;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
-  /*margin: 2rem*/
+  padding: 1rem;
 }
 
 .box-6 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1rem;
-  /*margin: 2rem*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .history-img {
-  width: 15rem;
-  height: 10rem;
+  align-self: center;
+  width: 18rem;
+  height: 12.5rem;
 }
 
 .fa-car {
@@ -643,13 +651,16 @@ li {
     text-shadow: 1px 2px 5px #2a2a2a;
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top: 56%;
+    top: 51%;
     left: 50%;
     -webkit-animation: fadein 1s ease-in;
     -moz-animation: fadein 1s ease-in;
     animation: fadein 1s ease-in;
     transform: translate(-50%, -50%);
+    margin-top: 5vh;
   }
+
+  /* modal */
 
   .newsletter-button {
     width: 20vw;
@@ -671,6 +682,8 @@ li {
   .newsletter-check > input {
     margin-right: 1vw;
   }
+
+  /* arrow */
 
   .main-banner {
     height: 100vh;
@@ -745,28 +758,28 @@ li {
 
   footer {
     flex-direction: row;
+    align-items: start;
+    height: 35vh;
     padding: 3em;
   }
 
-  .footerMenu {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
-    width: 33vw;
-    height: 100%;
-  }
-
-  .footerItemSeparator {
+  hr {
     display: none;
   }
 
+  .footerList {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 100%;
+  }
+
   .footerSocialNetworks {
-    width: 33vw;
+    flex-direction: column;
   }
 
   .footerLogo {
     display: block;
-    width: 33vw;
   }
 
   .footerLogoImage {
@@ -787,58 +800,88 @@ li {
   }
 
   .main-container {
+    margin-inline: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .creation,
+  .circuit,
+  .innovation {
+    display: flex;
+  }
+
+  .box-1 {
+    order: 1;
+  }
+  .box-2 {
+    order: 2;
+  }
+  .box-3 {
+    order: 2;
+  }
+  .box-4 {
+    order: 1;
+  }
+  .box-5 {
+    order: 1;
+  }
+  .box-6 {
+    order: 2;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  /* CSS si organisation du main-container et de son contenu en grid
+
+  .main-container {
     display: grid;
     grid-template-columns: minmax (1fr, auto);
     grid-template-rows: minmax (1fr, auto);
     grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    margin: 2rem;
+    grid-row-gap : 2rem;
+    margin : 2rem;
     text-align: justify;
     grid-template-areas:
-      'box-1 box-2'
-      'box-4 box-3'
-      'box-5 box-6';
+    "box-1 box-2"
+    "box-4 box-3"
+    "box-5 box-6";
   }
 
-  .box-1 {
-    grid-area: box-1;
-  }
-  .box-2 {
-    grid-area: box-2;
-  }
-  .box-3 {
-    grid-area: box-3;
-  }
-  .box-4 {
-    grid-area: box-4;
-  }
-  .box-5 {
-    grid-area: box-5;
-  }
-  .box-6 {
-    grid-area: box-6;
-  }
-
-  .main-container > btn history-btn {
-    display: none;
-  }
+  .box-1 { grid-area: box-1; }
+  .box-2 { grid-area: box-2; }
+  .box-3 { grid-area: box-3; }
+  .box-4 { grid-area: box-4; }
+  .box-5 { grid-area: box-5; }
+  .box-6 { grid-area: box-6; }
+  */
 
   .history-img {
-    width: 35rem;
-    height: 22.5rem;
+    width: 17.5rem;
+    height: 12rem;
     margin: auto;
   }
 
   .history-img:hover {
     transition: all 1s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(2);
   }
+
+  /* CSS à ajouter si on veut laisser tout le texte apparent en version desktop et masquer le bouton "voir plus"
 
   .history-btn {
     display: none;
   }
 
   .mobile-hidden {
-    display: grid;
+    display: block;
   }
+  */
 }

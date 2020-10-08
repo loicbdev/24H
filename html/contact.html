@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contact et informations pratiques sur le circuit et les logements autour." />
-    <meta name="author" content="Loic Bodolec, Anais Cotinet, Brice Mezerette et Nicolas Mercier"/>
+    <meta
+      name="description"
+      content="Contact et informations pratiques sur le circuit et les logements autour."
+    />
+    <meta
+      name="author"
+      content="Loic Bodolec, Anais Cotinet, Brice Mezerette et Nicolas Mercier"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -17,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Contact | 24H</title>
+    <title>Infos Pratiques | 24H</title>
   </head>
   <body>
     <!-- navbar  -->
@@ -90,16 +96,18 @@
           <h2>COORDONNÉES</h2>
           <p>Place Luigi Chinetti, 72019 Le Mans</p>
           <div class="location">
-              <div class="locationTel">
-                <i class="fas fa-phone-alt"></i>
-                <a  class="contactLinks"  href="tel:+33243402424">0243402424</a> 
-              </div>
-             <div>
+            <div class="locationTel">
+              <i class="fas fa-phone-alt"></i>
+              <a class="contactLinks" href="tel:+33243402424">0243402424</a>
+            </div>
+            <div>
               <i class="fas fa-envelope"></i>
-              <a class="contactLinks" href="mailto:hello24h@teambolides.com">hello24h@teambolides.com</a>
-             </div>
-           </div>
-       </section>
+              <a class="contactLinks" href="mailto:hello24h@teambolides.com"
+                >hello24h@teambolides.com</a
+              >
+            </div>
+          </div>
+        </section>
       </section>
       <!-- hotel cards -->
       <section class="blocHotel">
@@ -109,7 +117,7 @@
             <img
               class="cardHotelImg"
               src="../images/hotel_room1.png"
-              alt="hotel 1"
+              alt="Brit Hôtel le Cottage"
             />
             <div class="cardHotelInfo">
               <p>Brit Hôtel Le Cottage</p>
@@ -130,7 +138,7 @@
             <img
               class="cardHotelImg"
               src="../images/hotel_room2.png"
-              alt="hotel 2"
+              alt="Hôtel Cabane du Circuit"
             />
             <div class="cardHotelInfo">
               <p>Cabane du circuit</p>
@@ -138,7 +146,7 @@
                 class="infoButton"
                 onclick="window.open('https://hotel-le-mans-cottage.brithotel.fr');"
               >
-              Réserver
+                Réserver
               </button>
             </div>
             <div class="cardHotelIcons">
@@ -151,15 +159,15 @@
             <img
               class="cardHotelImg"
               src="../images/hotel_room1.png"
-              alt="hotel 3"
+              alt="Hêtel H24 hôtel"
             />
             <div class="cardHotelInfo">
-              <p>H24 HOTEL</p>
+              <p>H24 Hôtel</p>
               <button
                 class="infoButton"
                 onclick="window.open('https://hotel-le-mans-cottage.brithotel.fr');"
               >
-              Réserver
+                Réserver
               </button>
             </div>
             <div class="cardHotelIcons">
@@ -171,16 +179,41 @@
         </section>
       </section>
     </main>
-    <footer>
-      <ul class="footerMenu">
+    <!-- footer -->
+    <footer id="footer">
+      <ul class="footerList">
+        <li class="footerList-title">Navigation</li>
         <li><a class="footerItem" href="home.html">Accueil</a></li>
-        <li class="footerItemSeparator">|</li>
         <li><a class="footerItem" href="history.html"> Histoire</a></li>
-        <li class="footerItemSeparator">|</li>
-        <li><a class="footerItem" href="#"> Edition 2020</a></li>
-        <li class="footerItemSeparator">|</li>
+        <li><a class="footerItem" href=""> Edition 2020</a></li>
+        <li><a class="footerItem" href="contact.html"> Infos pratiques</a></li>
+      </ul>
+
+      <hr />
+
+      <ul class="footerList">
+        <li class="footerList-title">Partenaires</li>
+        <li><a class="footerItem" href="https://www.rolex.com/fr">Rolex</a></li>
         <li>
-          <a class="footerItem" href="contact.html"> Infos pratiques</a>
+          <a class="footerItem" href="http://www.lemansmetropole.fr/"
+            >Le Mans Métropole</a
+          >
+        </li>
+        <li>
+          <a class="footerItem" href="https://www.sarthe.fr/"
+            >Département de la Sarthe</a
+          >
+        </li>
+        <li><a class="footerItem" href="https://www.mma.fr/">MMA</a></li>
+      </ul>
+
+      <hr />
+
+      <ul class="footerList">
+        <li class="footerList-legal-title">Légales</li>
+        <li class="footerList-legal">Photo credits Pixabay</li>
+        <li class="footerList-legal">
+          © 2020 Brice Mezerette, Loïc Bodolec, Anais Cotinet, Nicolas Mercier
         </li>
       </ul>
 
@@ -204,6 +237,7 @@
         />
       </div>
     </footer>
+    <script src="../js/contact.js"></script>
     <script
       src="https://kit.fontawesome.com/b22c85a902.js"
       crossorigin="anonymous"
