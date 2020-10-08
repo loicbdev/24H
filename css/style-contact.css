@@ -14,6 +14,9 @@ main {
     margin-top: 6vh;
 }
 
+
+/* MOBILE VERSION */
+
 h2 {
     font-size: 1.5rem;
     font-weight: 800;
@@ -186,6 +189,7 @@ iframe {
     flex-direction: row;
     align-items: flex-end;
     grid-area: 1 / 3 / 2 / 4;
+    margin-top: 6px;
 }
 
 .cardHotelIcons > i {
@@ -275,7 +279,7 @@ footer {
   }
   
 
-/* DESKTOP */
+/* DESKTOP VERSION */
 
 @media screen and (min-width: 768px) {
 /* navbar */
