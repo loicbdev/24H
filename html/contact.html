@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta description="Les 24H du Mans" />
     <meta
-      author="Brice Mezerette, Anais Cotinet, Loic Bodolec, Nicolas Mercier"
+      name="description"
+      content="Contact et informations pratiques sur le circuit et les logements autour."
+    />
+    <meta
+      name="author"
+      content="Loic Bodolec, Anais Cotinet, Brice Mezerette et Nicolas Mercier"
     />
     <link
       rel="stylesheet"
@@ -19,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Contact | 24H</title>
+    <title>Infos Pratiques | 24H</title>
   </head>
   <body>
     <!-- navbar  -->
@@ -84,24 +88,24 @@
       <section class="blocLocation">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2671.985463080106!2d0.2056818156426801!3d47.95600517920942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e28fad5242c195%3A0xe9ae326c6c02c174!2sCircuit%20des%2024%20Heures%20du%20Mans!5e0!3m2!1sfr!2sfr!4v1601459914712!5m2!1sfr!2sfr"
-          width="100%"
-          height="500"
-          frameborder="0"
-          style="border: 0;"
           allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
         ></iframe>
         <section class="locationContainer">
           <h2>COORDONNÉES</h2>
+          <p>Place Luigi Chinetti, 72019 Le Mans</p>
           <div class="location">
-            <p>Place Luigi Chinetti, 72019 Le Mans</p>
-            <i class="fas fa-phone-alt"></i>
-            <a class="locationTel" href="tel:+33243402424">0243402424</a>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:hello24h@teambolides.com"
-              >hello24h@teambolides.com</a
-            >
+            <div class="locationTel">
+              <i class="fas fa-phone-alt"></i>
+              <a class="contactLinks" href="tel:+33243402424">0243402424</a>
+            </div>
+            <div>
+              <i class="fas fa-envelope"></i>
+              <a class="contactLinks" href="mailto:hello24h@teambolides.com"
+                >hello24h@teambolides.com</a
+              >
+            </div>
           </div>
         </section>
       </section>
@@ -113,7 +117,7 @@
             <img
               class="cardHotelImg"
               src="../images/hotel_room1.png"
-              alt="hotel 1"
+              alt="Brit Hôtel le Cottage"
             />
             <div class="cardHotelInfo">
               <p>Brit Hôtel Le Cottage</p>
@@ -121,7 +125,7 @@
                 class="infoButton"
                 onclick="window.open('https://hotel-le-mans-cottage.brithotel.fr');"
               >
-                Voir le site web
+                Réserver
               </button>
             </div>
             <div class="cardHotelIcons">
@@ -134,7 +138,7 @@
             <img
               class="cardHotelImg"
               src="../images/hotel_room2.png"
-              alt="hotel 2"
+              alt="Hôtel Cabane du Circuit"
             />
             <div class="cardHotelInfo">
               <p>Cabane du circuit</p>
@@ -142,7 +146,7 @@
                 class="infoButton"
                 onclick="window.open('https://hotel-le-mans-cottage.brithotel.fr');"
               >
-                Voir le site web
+                Réserver
               </button>
             </div>
             <div class="cardHotelIcons">
@@ -155,15 +159,15 @@
             <img
               class="cardHotelImg"
               src="../images/hotel_room1.png"
-              alt="hotel 3"
+              alt="Hêtel H24 hôtel"
             />
             <div class="cardHotelInfo">
-              <p>Cabane du circuit</p>
+              <p>H24 Hôtel</p>
               <button
                 class="infoButton"
                 onclick="window.open('https://hotel-le-mans-cottage.brithotel.fr');"
               >
-                Voir le site web
+                Réserver
               </button>
             </div>
             <div class="cardHotelIcons">
@@ -175,16 +179,41 @@
         </section>
       </section>
     </main>
-    <footer>
-      <ul class="footerMenu">
+    <!-- footer -->
+    <footer id="footer">
+      <ul class="footerList">
+        <li class="footerList-title">Navigation</li>
         <li><a class="footerItem" href="home.html">Accueil</a></li>
-        <li class="footerItemSeparator">|</li>
         <li><a class="footerItem" href="history.html"> Histoire</a></li>
-        <li class="footerItemSeparator">|</li>
-        <li><a class="footerItem" href="#"> Edition 2020</a></li>
-        <li class="footerItemSeparator">|</li>
+        <li><a class="footerItem" href=""> Edition 2020</a></li>
+        <li><a class="footerItem" href="contact.html"> Infos pratiques</a></li>
+      </ul>
+
+      <hr />
+
+      <ul class="footerList">
+        <li class="footerList-title">Partenaires</li>
+        <li><a class="footerItem" href="https://www.rolex.com/fr">Rolex</a></li>
         <li>
-          <a class="footerItem" href="contact.html"> Infos pratiques</a>
+          <a class="footerItem" href="http://www.lemansmetropole.fr/"
+            >Le Mans Métropole</a
+          >
+        </li>
+        <li>
+          <a class="footerItem" href="https://www.sarthe.fr/"
+            >Département de la Sarthe</a
+          >
+        </li>
+        <li><a class="footerItem" href="https://www.mma.fr/">MMA</a></li>
+      </ul>
+
+      <hr />
+
+      <ul class="footerList">
+        <li class="footerList-legal-title">Légales</li>
+        <li class="footerList-legal">Photo credits Pixabay</li>
+        <li class="footerList-legal">
+          © 2020 Brice Mezerette, Loïc Bodolec, Anais Cotinet, Nicolas Mercier
         </li>
       </ul>
 
@@ -208,6 +237,7 @@
         />
       </div>
     </footer>
+    <script src="../js/contact.js"></script>
     <script
       src="https://kit.fontawesome.com/b22c85a902.js"
       crossorigin="anonymous"
