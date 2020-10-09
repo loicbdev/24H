@@ -1146,6 +1146,7 @@ body {
 
   .header-title {
     font-size: 6rem;
+    bottom: 1%
   }
 
   .header-text {
@@ -1156,7 +1157,7 @@ body {
     text-shadow: 1px 2px 5px #2a2a2a;
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top: 51%;
+    top: 45%;
     left: 50%;
     -webkit-animation: fadein 1s ease-in;
     -moz-animation: fadein 1s ease-in;
