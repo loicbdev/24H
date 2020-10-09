@@ -88,31 +88,9 @@ body {
   display: flex;
 }
 
-/*
-.banniere {
-    position: relative;
-    width: 100%;
-
-}
-
-.banniere img {
-    width: 100%;
-
-}
-
-.banniere-titre {
-    color: white;
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
-}
-*/
-
-.history-banner {
+.main-banner {
   background-image: url('image/podium.jpg');
-  height: 35vh;
+  height: 70vh;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,14 +100,14 @@ body {
 
 .header-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   letter-spacing: 0.3rem;
-  color: white;
+  color: var(--content-bg-color);
   text-shadow: 2px 3px 6px #141414;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Anton', sans-serif;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-animation: fadein 1s ease-in;
@@ -281,7 +259,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 30vh;
+  height: 100vh;
   background-color: #343b3f;
 }
 
@@ -295,7 +273,7 @@ footer {
 }
 
 .footerItem {
-  color: rgba(255, 255, 255, 0.5);
+  color: #212529;
 }
 
 .footerItem:hover {
@@ -426,23 +404,6 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: var(--section-margin);
-  }
-
-  .header-title {
-    text-align: center;
-    font-size: 3rem;
-    letter-spacing: 0.3rem;
-    color: white;
-    text-shadow: 2px 3px 6px #141414;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-animation: fadein 1s ease-in;
-    -moz-animation: fadein 1s ease-in;
-    animation: fadein 1s ease-in;
   }
 
   .section2 {
@@ -595,6 +556,7 @@ li {
   /* footer */
   footer {
     flex-direction: row;
+    height: 35vh;
   }
 
   .footerMenu {
