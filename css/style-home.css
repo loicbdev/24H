@@ -650,7 +650,7 @@ body {
   justify-content: space-around;
 }
 
-.card {
+.card24 {
   height: 306px;
   width: 284px;
   position: static;
@@ -872,7 +872,7 @@ body {
       justify-content: space-around;
   }
 
-  .card {
+  .card24 {
       height: 214px;
       width: 1098px;
       position: static;
