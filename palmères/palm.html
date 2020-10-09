@@ -1,48 +1,68 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="pastyle.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="Acheter ses billets et tout savoir sur les 24H du Mans, son histoire, les actualités et les résultats de la dernière édition."
+    />
+    <meta
+    name="author"
+    content="Loic Bodolec, Anais Cotinet, Brice Mezerette et Nicolas Mercier"
+    />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+    />
+    <link
+    href=“https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap”
+    rel=“stylesheet” />
+    <link rel="stylesheet" href="../css/style-home.css" />
+    <link rel="stylesheet" href="pastyle.css">
+    <title>Edition 2020 | 24H</title>
 </head>
 <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <div class="nav-wrapper">
-                <h1 class="site-title">24H</h1>
-                <input type="checkbox" id="menu-checkbox" class="menu-checkbox"/>
-                <label for="menu-checkbox" class="menu-toggle">≡</label>
-                <ul class="menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Histoire</a></li>
-                    <li><a href="">Palmarès</a></li>
-                    <li><a href="">Pratique</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section class="section1">
-         <!--<div class="row">
-              <div class="banniere">
-                  <img src="images/podium.jpg" alt="Podium">
-                  <h1 class="banniere-titre">PALMARES</h1>
-              </div>
-          </div>*/-->
-          <header class="history-banner">
-            <h1 class="header-title">PALMARES</h1>
-          </header>
-    </section>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-title" href="home.html">24H</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav navbar-content">
+            <a class="nav-link text-right" href="../html/home.html"
+              >Accueil <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-link text-right" href="../html/history.html">Histoire</a>
+            <a class="nav-link text-right" href="../palmères/palm.html"
+              >Edition 2020</a
+            >
+            <a class="nav-link text-right" href="../html/contact.html">Infos pratiques</a>
+          </div>
+        </div>
+      </nav>
+      <header class="main-banner">
+        <h1 class="header-title">LE PALMARES</h1>
+
+      </header>
     <section class="section2">
         <!--LMP1-->
-        <div class="card">
+        <div class="card24">
             <div class="cardImg1" ></div>
-
-
             <div class="cardTitle">
                 <h1 class="title">TOYOTA GAZOO TEAM</h1>
             </div>
-
             <div class="cardPar">
                 <p class="par1">
                     <span class="bold">Pilotes:</span> Sebastien Buemi, Kazuki <span class="pilot1">Nakajima, Brendon Hartley</span></p>
@@ -59,7 +79,7 @@
             </div>
         </div>
         <!--LMP2-->
-        <div class="card">
+        <div class="card24">
             <div class="cardImg2"></div>
 
             <div class="cardTitle">
@@ -82,7 +102,7 @@
             </div>
         </div>
         <!--GTEPRO-->
-        <div class="card">
+        <div class="card24">
             <div class="cardImg3"></div>
 
             <div class="cardTitle">
@@ -105,7 +125,7 @@
             </div>
         </div>
         <!--GTEAM-->
-        <div class="card">
+        <div class="card24">
             <div class="cardImg4"></div>
 
             <div class="cardTitle">
@@ -128,8 +148,84 @@
             </div>
         </div>
     </section>
+    <!-- footer -->
+    <footer id="footer">
+        <ul class="footerList">
+          <li class="footerList-title">Navigation</li>
+          <li><a class="footerItem" href="home.html">Accueil</a></li>
+          <li><a class="footerItem" href="history.html"> Histoire</a></li>
+          <li>
+            <a class="footerItem" href="../palmères/palm.html"> Edition 2020</a>
+          </li>
+          <li><a class="footerItem" href="contact.html"> Infos pratiques</a></li>
+        </ul>
 
-        </body>
-        </html>
+        <hr />
+
+        <ul class="footerList">
+          <li class="footerList-title">Partenaires</li>
+          <li><a class="footerItem" href="https://www.rolex.com/fr">Rolex</a></li>
+          <li>
+            <a class="footerItem" href="http://www.lemansmetropole.fr/"
+              >Le Mans Métropole</a
+            >
+          </li>
+          <li>
+            <a class="footerItem" href="https://www.sarthe.fr/"
+              >Département de la Sarthe</a
+            >
+          </li>
+          <li><a class="footerItem" href="https://www.mma.fr/">MMA</a></li>
+        </ul>
+
+        <hr />
+
+        <ul class="footerList">
+          <li class="footerList-legal-title">Légales</li>
+          <li class="footerList-legal">Photo credits Pixabay</li>
+          <li class="footerList-legal">
+            © 2020 Brice Mezerette, Loïc Bodolec, Anais Cotinet, Nicolas Mercier
+          </li>
+        </ul>
+
+        <ul class="footerSocialNetworks">
+          <a href="https://www.instagram.com/">
+            <i class="fab fa-instagram fa-3x footerItem"></i>
+          </a>
+          <a href="https://twitter.com/?lang=fr">
+            <i class="fab fa-twitter fa-3x footerItem"></i>
+          </a>
+          <a href="https://www.facebook.com/">
+            <i class="fab fa-facebook-f fa-3x footerItem"></i>
+          </a>
+        </ul>
+
+        <div class="footerLogo">
+          <img
+            class="footerLogoImage"
+            src="https://placekitten.com/232/300"
+            alt="logo"
+          />
+        </div>
+      </footer>
+      <script
+      src="https://kit.fontawesome.com/b22c85a902.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
