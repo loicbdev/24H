@@ -1,6 +1,6 @@
 # 24H
 
-24H is the project 1 of our training at WCS. It's a static website we made in few days, using only HTML, Css and JavaScript.
+24H is the project 1 of our training at WCS. It's a static website we made in few days, using only HTML, CSS and JavaScript.
 
 - Work with HTML and CSS
 - Create wireframes and follow them
