@@ -11,7 +11,7 @@
 
 ## Contributors
 
-- [Anais Cotinet](https://github.com/anais-ctnt)
+- [Anaïs Cotinet](https://github.com/anais-ctnt)
 - [Loïc Bodolec](https://github.com/loicbdev)
 - [Brice Mezerette](https://github.com/brice-mez)
 - [Nicolas Mercier](https://github.com/nicholas570)
