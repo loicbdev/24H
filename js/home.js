@@ -24,7 +24,7 @@ button.addEventListener('click', (e) => {
   if (state.adultTotal !== 0 || state.childTotal !== 0) {
     button.innerHTML = 'Loading...';
     setTimeout(() => {
-      alert('Paiement confirmé');
+      alert('Paiement confirmé!');
       button.innerHTML = 'Payer';
     }, 1000);
   } else {
