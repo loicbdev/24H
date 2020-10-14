@@ -16,6 +16,3 @@
 - [Brice Mezerette](https://github.com/brice-mez)
 - [Nicolas Mercier](https://github.com/nicholas570)
 
-## Deployement
-
-https://github.com/loicbdev/24h/blob/master/html/home.html
