@@ -17,6 +17,6 @@
 - [Nicolas Mercier](https://github.com/nicholas570)
 
 
-## Deployement
+## Deployment
 
 https://loicbdev.github.io/24h/html/home.html
