@@ -590,15 +590,7 @@ body {
   display: flex;
 }
 
-.history-banner {
-  background-image: url('images/podium.jpg');
-  height: 35vh;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: var(--section-margin);
-}
+
 
 .header-title {
   text-align: center;
