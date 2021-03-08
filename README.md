@@ -1,6 +1,6 @@
 # 24H
 
-24H is the project 1 of our training at WCS. It's a static website we made in few days, using only HTML, CSS and JavaScript.
+24H is the project 1 of our training at Wild Code School. It's a static website we made in few days.
 
 - Work with HTML and CSS
 - Create wireframes and follow them
@@ -15,3 +15,8 @@
 - [Loïc Bodolec](https://github.com/loicbdev)
 - [Brice Mezerette](https://github.com/brice-mez)
 - [Nicolas Mercier](https://github.com/nicholas570)
+
+
+## Deployment
+
+https://loicbdev.github.io/24h/html/home.html
