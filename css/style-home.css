@@ -590,28 +590,6 @@ body {
   display: flex;
 }
 
-/*
-.banniere {
-  position: relative;
-  width: 100%;
-
-}
-
-.banniere img {
-  width: 100%;
-
-}
-
-.banniere-titre {
-  color: white;
-  position: absolute;
-  top: 30%;
-  width: 100%;
-  text-align: center;
-  font-size: 3rem;
-}
-*/
-
 .history-banner {
   background-image: url('images/podium.jpg');
   height: 35vh;
